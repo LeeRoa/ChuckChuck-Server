@@ -1,0 +1,27 @@
+# Spring Setting
+spring:
+  application:
+    name: ChuckChuck-Server
+
+  # DB Setting
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://222.120.180.213:23307/approval?serverTimezone=UTC&characterEncoding=UTF-8
+    username: dba
+    password: LRAqscESZ!%
+
+# Mybatis Setting
+mybatis:
+  mapper-locations: src/main/resources/mapper/*.xml
+  type-aliases-package: rise.cc.dao
+  configuration:
+    map-underscore-to-camel-case: true
+
+# Server Setting
+server:
+  servlet:
+    context-path: /
+  ssl:
+    key-store: src/main/resources/config/tomcat.jks
+    key-store-password: 1qazxsw2#EDC
+  port: 28443
