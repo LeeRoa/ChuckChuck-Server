@@ -19,7 +19,6 @@ public class ResultCode {
     public static final String ERROR = "100";
     public static final String ERROR_MSG = "처리 실패";
 
-
     /**
      *
      * @param resultCode 결과 코드
