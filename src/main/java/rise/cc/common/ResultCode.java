@@ -32,17 +32,4 @@ public class ResultCode {
             default -> ERROR_MSG;
         };
     }
-
-    /**
-     *
-     * @param resultCode 결과 코드
-     * @return 결과 코드와 결과 메시지가 담긴 JSON 문자열
-     */
-    public static String resultJsonString(String resultCode){
-        JSONObject jsonStr	= new JSONObject();
-        jsonStr.put("resultCode", resultCode);
-        jsonStr.put("resultMsg", resultMsg(resultCode));
-
-        return jsonStr.toJSONString();
-    }
 }

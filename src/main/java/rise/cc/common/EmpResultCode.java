@@ -1,7 +1,7 @@
 package rise.cc.common;
 
 @SuppressWarnings("unused")
-public class UserResultCode extends ResultCode {
+public class EmpResultCode extends ResultCode {
 
     public static final String ID_ALREADY_EXISTS = "101";
     public static final String ID_ALREADY_EXISTS_MSG = "이미 존재하는 아이디입니다.";

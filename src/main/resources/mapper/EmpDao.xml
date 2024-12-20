@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="rise.cc.dao.EmpDao">
+    <select id="loginProc" parameterType="Map" resultType="rise.cc.dto.Employees">
+        SELECT
+            CC_EMP.EMP_ID,
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PHONENUM,
+            CC_EMP.EMP_NAME,
+            CC_EMP.EMP_BIRTH,
+            CC_EMP.EMP_ACCOUNT_STATUS,
+            CC_EMP.EMP_POSITION,
+            CC_EMP.PW_ERROR_CNT,
+            CC_EMP.EMP_JOIN_DT,
+            CC_EMP.EMP_RETIRE_DT,
+            CC_CODE.CODE_NAME AS ROLE,
+            CC_EMP.DEPARTMENT_ID,
+            CC_DEP.DEPARTMENT_NAME,
+            CC_RANK.RANK_NAME,
+            CC_EMP.DIRECT_BOSS_ID
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_DEP
+        ON
+            CC_EMP.DEPARTMENT_ID = CC_DEP.DEPARTMENT_ID
+        INNER JOIN
+            CC_RANK
+        ON
+            CC_EMP.RANK_ID = CC_RANK.RANK_ID
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = #{empEmail}
+          AND
+            EMP_PW = #{empPw}
+    </select>
+
+    <select id="getEmp" parameterType="Map" resultType="rise.cc.dto.Employees">
+        SELECT
+            *
+        FROM
+            CC_EMP
+        WHERE
+            1=1
+        <if test="empId != null and !empId.equals('')">
+            AND EMP_ID = #{empId}
+        </if>
+        <if test="empEmail != null and !empEmail.equals('')">
+            AND EMP_EMAIL = #{empEmail}
+        </if>
+    </select>
+
+    <select id="getEmpCount" parameterType="Map" resultType="int">
+        SELECT
+            COUNT(*)
+        FROM
+            CC_EMP
+        WHERE
+            1=1
+        <if test="empId != null and !empId.equals('')">
+            AND EMP_ID = #{empId}
+        </if>
+        <if test="empEmail != null and !empEmail.equals('')">
+            AND EMP_EMAIL = #{empEmail}
+        </if>
+    </select>
+
+</mapper>

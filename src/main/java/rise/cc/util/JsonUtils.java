@@ -3,6 +3,7 @@ package rise.cc.util;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -12,6 +13,8 @@ import java.util.Map;
 
 @SuppressWarnings("unchecked, unused")
 public class JsonUtils {
+
+    static ObjectMapper objectMapper = new ObjectMapper().setPropertyNamingStrategy(PropertyNamingStrategies.LOWER_CAMEL_CASE);
 
     /**
      *
@@ -34,22 +37,19 @@ public class JsonUtils {
 
     /**
      * @param jsonStr 파싱할 JSON 문자열
-     * @param keyParam 파싱할 KEY 값
-     * @param param 추가할 데이터
-     * @return 파싱한 JSON 데이터에 새로운 데이터 추가된 JSON String
-     * @throws ParseException 파싱할 KEY 값이 존재하지 않음
+     * @param key 추가할 KEY 값
+     * @param value 추가할 데이터
+     * @return 파싱한 JSON 데이터에 새로운 데이터가 추가된 JSON String
+     * @throws JsonProcessingException JSON 데이터 파싱 및 추가 실패
      */
-    public static String addJsonValue(String jsonStr, String keyParam, Map<String, Object> param) throws ParseException {
-        JSONParser jsonParser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonStr);
-        if(keyParam == null){
-            jsonObject.putAll(param);
-            return jsonObject.toJSONString();
-        }else {
-            JSONObject jsonArrayObject = ((JSONObject) jsonObject.get(keyParam));
-            jsonArrayObject.putAll(param);
-            return jsonArrayObject.toJSONString();
+    public static String addJsonValue(String jsonStr, String key, Object value) throws JsonProcessingException {
+        if (jsonStr == null || key == null || value == null) {
+            throw new NullPointerException();
         }
+        Map<String, Object> jsonMap = objectMapper.readValue(jsonStr, new TypeReference<>() {});
+        jsonMap.put(key, value);
+
+        return objectMapper.writeValueAsString(jsonMap);
     }
 
     /**
@@ -57,10 +57,10 @@ public class JsonUtils {
      * @param resultCode 처리 코드
      * @param resultMsg 처리 메시지
      */
-    public static String makeResultJsonString(String resultCode, String resultMsg){
+    public static String resultJsonString(String resultCode, String resultMsg){
         JSONObject jsonStr	= new JSONObject();
         jsonStr.put("resultCode", resultCode);
-        jsonStr.put("result",resultMsg);
+        jsonStr.put("resultMsg",resultMsg);
 
         return jsonStr.toJSONString();
     }
@@ -72,8 +72,7 @@ public class JsonUtils {
      * @throws JsonProcessingException JSON 문법 에러
      */
     public static Map<String, Object> jsonToMap(String jsonStr) throws JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper();
-        TypeReference<Map<String, Object>> typeReference = new TypeReference<Map<String,Object>>() {};
+        TypeReference<Map<String, Object>> typeReference = new TypeReference<>() {};
         return objectMapper.readValue(jsonStr, typeReference);
     }
 
@@ -84,7 +83,6 @@ public class JsonUtils {
      * @throws JsonProcessingException JSON 문법 에러
      */
     public static String listMaptoJson(List<Map<String, Object>> listMap) throws JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(listMap);
 
     }
@@ -95,9 +93,7 @@ public class JsonUtils {
      * @return json String
      * @throws JsonProcessingException JSON 문법 에러
      */
-    public static String ObjtoJson(Object object) throws JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.writeValueAsString(object);
+    public static String objtoJson(Object object) throws JsonProcessingException {
+        return objectMapper.writeValueAsString(object);
     }
-
 }

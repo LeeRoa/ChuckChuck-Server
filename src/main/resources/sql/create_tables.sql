@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS APPROVAL.CC_RANK (
                                                 RANK_ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
                                                 PARENT_RANK_ID INT NULL,
                                                 FOREIGN KEY (PARENT_RANK_ID) REFERENCES CC_RANK (RANK_ID) ON DELETE SET NULL ON UPDATE CASCADE,
-    RAND_NAME VARCHAR(500) NOT NULL,
+    RANK_NAME VARCHAR(500) NOT NULL,
     SPARE VARCHAR(200)
     );
 

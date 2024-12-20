@@ -5,8 +5,10 @@ spring:
 
   # DB Setting
   datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://222.120.180.213:23307/approval?serverTimezone=UTC&characterEncoding=UTF-8
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://222.120.180.213:23307/approval?serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mariadb://222.120.180.213:23307/approval?serverTimezone=UTC&characterEncoding=UTF-8
     username: dba
     password: LRAqscESZ!%
 
@@ -14,8 +16,6 @@ spring:
 mybatis:
   mapper-locations: src/main/resources/mapper/*.xml
   type-aliases-package: rise.cc.dao
-  configuration:
-    map-underscore-to-camel-case: true
 
 # Server Setting
 server:
@@ -24,4 +24,47 @@ server:
   ssl:
     key-store: src/main/resources/config/tomcat.jks
     key-store-password: 1qazxsw2#EDC
-  port: 28443
+  port: 28444
+
+# Swagger-ui Setting
+springdoc:
+  api-docs:
+    path: /v3/api-docs       # API 문서 기본 경로
+  swagger-ui:
+    path: /swagger-ui.html  # Swagger UI 기본 경로
+    operationsSorter: method  # 엔드포인트 정렬 기준
+    tagsSorter: alpha         # 태그 정렬 기준
+
+#logging setting
+logging:
+  level:
+    com:
+      zaxxer:
+        hikari: INFO
+    javax:
+      sql:
+        DataSource: OFF
+    jdbc:
+      audit: OFF # JDBC 트러블슈팅 경우를 제외하고는 사용 권장 X
+      resultset: OFF # ResultSet을 포함한 모든 JDBC 호출 정보를 출력
+      resultsettable: INFO  #SQL 결과 데이터 Table형식으로 출력
+      sqlonly: OFF     #SQL만 로그만 출력
+      sqltiming: INFO    #SQL + 소요시간 출력
+      connection: OFF  # 커넥션 연결/종료 정보 출력
+    org:
+      springframework: INFO
+    root: INFO
+
+  # logback setting
+  pattern:
+    file: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
+  file:
+    name: C:/logs/ChuckChuck-Server.log
+#    name: ${catalina.base}/logs/ChuckChuck-Server.log
+
+  logback:
+    rollingpolicy:
+      file-name-pattern: "C:/logs/ChuckChuck-Server.%d{yyyy-MM-dd}.%i.log"
+#      file-name-pattern: "${catalina.base}/logs/okey-admin.%d{yyyy-MM-dd}.%i.log"
+      max-history: 30
+      max-file-size: 100MB
