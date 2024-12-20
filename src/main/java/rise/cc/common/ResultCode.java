@@ -2,7 +2,7 @@ package rise.cc.common;
 
 import org.json.simple.JSONObject;
 
-@SuppressWarnings("unchecked, unused")
+@SuppressWarnings("unused")
 public class ResultCode {
 
     /**
