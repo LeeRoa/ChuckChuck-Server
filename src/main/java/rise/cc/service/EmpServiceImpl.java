@@ -3,15 +3,12 @@ package rise.cc.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.javassist.NotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import rise.cc.common.EmpResultCode;
-import rise.cc.common.ResultCode;
 import rise.cc.dao.EmpDao;
 import rise.cc.dto.Employees;
-import rise.cc.exception.EmpLoginException;
 import rise.cc.util.JsonUtils;
-import rise.cc.util.MapUtils;
 
 import java.util.Map;
 
@@ -22,6 +19,7 @@ public class EmpServiceImpl implements EmpService {
 
     private final EmpDao empDao;
 
+    @Transactional
     @Override
     public String loginProc(Map<String, Object> empMap) throws JsonProcessingException {
         if (empDao.getEmpCount(empMap) < 1) {
