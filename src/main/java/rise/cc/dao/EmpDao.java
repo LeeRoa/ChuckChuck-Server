@@ -7,8 +7,8 @@ import java.util.Map;
 
 @Mapper
 public interface EmpDao {
-    Employees loginProc(Map<String, Object> empMap);
-    Employees getEmp(Map<String, Object> empMap);
+    Employees loginProc(Employees emp);
+    Employees getEmp(Employees emp);
 
-    Integer getEmpCount(Map<String, Object> empMap);
+    Integer getEmpCount(Employees emp);
 }

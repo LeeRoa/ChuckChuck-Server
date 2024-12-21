@@ -1,0 +1,565 @@
+[15:16:46.782][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 67767 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[15:16:46.784][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:16:47.366][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:16:47.373][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:16:47.373][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:16:47.400][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:16:47.401][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 593 ms
+[15:16:47.984][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[15:16:47.990][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:16:47.996][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.417 seconds (process running for 1.799)
+[15:20:40.347][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 67835 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[15:20:40.348][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:20:40.908][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:20:40.914][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:20:40.915][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:20:40.942][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:20:40.942][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 565 ms
+[15:20:41.522][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[15:20:41.527][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:20:41.533][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.407 seconds (process running for 1.893)
+[15:39:08.947][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 68381 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[15:39:08.949][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:39:09.544][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:39:09.551][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:39:09.551][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:39:09.574][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:39:09.574][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 605 ms
+[15:39:10.250][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[15:39:10.256][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:39:10.262][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.522 seconds (process running for 2.03)
+[15:39:37.251][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:39:37.253][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:39:37.257][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 4 ms
+[15:39:37.648][INFO ][org.springdoc.api.AbstractOpenApiResource.getOpenApi:line387] - Init duration for springdoc-openapi is: 95 ms
+[15:39:53.612][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:39:53.748][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@3bfe3526
+[15:39:53.750][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:39:53.808][ERROR][jdbc.sqltiming.exceptionOccured:line154] - 1. PreparedStatement.execute() FAILED! SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE,
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = 'string'
+ {FAILED after 12 msec}
+java.sql.SQLSyntaxErrorException: (conn=766) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:158)
+	at org.mariadb.jdbc.MariaDbStatement.executeExceptionEpilogue(MariaDbStatement.java:262)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:229)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:149)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy69.loginProc(Unknown Source)
+	at rise.cc.service.EmpServiceImpl.loginProc(EmpServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at rise.cc.service.EmpServiceImpl$$SpringCGLIB$$0.loginProc(<generated>)
+	at rise.cc.controller.EmpController.login(EmpController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+	at org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException.of(MariaDbSqlException.java:34)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:195)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:178)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:322)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:220)
+	... 93 common frames omitted
+Caused by: java.sql.SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+      ...' at line 6
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1693)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1555)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1518)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:319)
+	... 94 common frames omitted
+[15:39:53.926][ERROR][rise.cc.controller.EmpController.login:line39] - 로그인 요청 에러 : 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: (conn=766) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+### The error may exist in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]
+### The error may involve rise.cc.dao.EmpDao.loginProc-Inline
+### The error occurred while setting parameters
+### SQL: SELECT             CC_EMP.EMP_EMAIL,             CC_EMP.EMP_PW,             CC_CODE.CODE_NAME AS ROLE,         FROM             CC_EMP                 INNER JOIN             CC_CODE             ON                 CC_EMP.ROLE_ID = CC_CODE.CODE_NO         WHERE             EMP_RETIRE_DT IS NULL           AND             EMP_ACCOUNT_STATUS = 'Y'           AND             EMP_EMAIL = ?
+### Cause: java.sql.SQLSyntaxErrorException: (conn=766) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM
+; bad SQL grammar []
+[15:40:41.654][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:40:41.687][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:40:43.508][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 68472 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[15:40:43.509][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:40:44.058][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:40:44.074][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:40:44.075][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:40:44.136][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:40:44.137][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 609 ms
+[15:40:44.874][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[15:40:44.889][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:40:44.904][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.57 seconds (process running for 2.213)
+[15:41:16.042][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:41:16.043][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:41:16.045][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 2 ms
+[15:41:16.071][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:41:16.161][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@492dd027
+[15:41:16.162][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:41:16.212][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = 'string'
+ {executed in 11 msec}
+[15:41:16.218][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|-------|----------|
+|emp_email |emp_pw |code_name |
+|----------|-------|----------|
+|----------|-------|----------|
+
+[15:41:16.222][ERROR][rise.cc.service.EmpServiceImpl.loginProc:line27] - 사원 찾기 요청 에러 : 존재하지 않는 아이디입니다.
+[15:41:24.701][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = '1'
+ {executed in 11 msec}
+[15:41:24.706][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|-------|----------|
+|emp_email |emp_pw |code_name |
+|----------|-------|----------|
+|1         |1      |ROLE_CEO  |
+|----------|-------|----------|
+
+[15:41:24.707][INFO ][rise.cc.service.EmpServiceImpl.loginProc:line31] - 사원 찾기 성공
+[15:43:17.512][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = NULL
+ {executed in 22 msec}
+[15:43:17.516][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|-------|----------|
+|emp_email |emp_pw |code_name |
+|----------|-------|----------|
+|----------|-------|----------|
+
+[15:43:17.516][ERROR][rise.cc.service.EmpServiceImpl.loginProc:line27] - 사원 찾기 요청 에러 : 존재하지 않는 아이디입니다.
+[15:44:06.991][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:44:07.023][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:44:09.125][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 68650 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[15:44:09.126][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:44:09.693][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:44:09.703][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:44:09.703][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:44:09.731][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:44:09.731][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 582 ms
+[15:44:09.973][WARN ][org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext.refresh:line632] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empController' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/controller/EmpController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'empServiceImpl' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/service/EmpServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'empDao' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/dao/EmpDao.class]: Cannot resolve reference to bean 'sqlSession' while setting bean property 'sqlSessionTemplate'
+[15:44:09.974][INFO ][org.apache.catalina.core.StandardService.log:line173] - Stopping service [Tomcat]
+[15:44:09.981][INFO ][org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger.logMessage:line82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[15:44:09.993][ERROR][org.springframework.boot.SpringApplication.reportFailure:line851] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empController' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/controller/EmpController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'empServiceImpl' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/service/EmpServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'empDao' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/dao/EmpDao.class]: Cannot resolve reference to bean 'sqlSession' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at rise.cc.ChuckChuckServerApplication.main(ChuckChuckServerApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'empServiceImpl' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/service/EmpServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'empDao' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/dao/EmpDao.class]: Cannot resolve reference to bean 'sqlSession' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'empDao' defined in file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main/rise/cc/dao/EmpDao.class]: Cannot resolve reference to bean 'sqlSession' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSession' defined in class path resource [rise/cc/config/MybatisConfig.class]: Unsatisfied dependency expressed through method 'sqlSession' parameter 0: Error creating bean with name 'sqlSessionFactory' defined in class path resource [rise/cc/config/MybatisConfig.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [rise/cc/config/MybatisConfig.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 57 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 71 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:700)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:577)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:720)
+	at rise.cc.config.MybatisConfig.sqlSessionFactory(MybatisConfig.java:26)
+	at rise.cc.config.MybatisConfig$$SpringCGLIB$$0.CGLIB$sqlSessionFactory$1(<generated>)
+	at rise.cc.config.MybatisConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at rise.cc.config.MybatisConfig$$SpringCGLIB$$0.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains key rise.cc.dao.EmpDao.getEmp. please check file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml] and file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
+	... 85 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection already contains key rise.cc.dao.EmpDao.getEmp. please check file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml] and file [/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/resources/main/mapper/EmpDao.xml]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1071)
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1024)
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:822)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:223)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:143)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
+	... 87 common frames omitted
+[15:44:34.601][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 68655 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[15:44:34.603][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:44:35.398][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:44:35.408][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:44:35.408][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:44:35.504][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:44:35.505][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 875 ms
+[15:44:36.613][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[15:44:36.628][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:44:36.637][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.253 seconds (process running for 2.59)
+[15:44:58.041][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:44:58.042][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:44:58.056][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 14 ms
+[15:44:58.100][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:44:58.200][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@364358e6
+[15:44:58.210][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:44:58.255][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = NULL
+ {executed in 11 msec}
+[15:44:58.264][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|-------|----------|
+|emp_email |emp_pw |code_name |
+|----------|-------|----------|
+|----------|-------|----------|
+
+[15:44:58.268][ERROR][rise.cc.service.EmpServiceImpl.loginProc:line27] - 사원 찾기 요청 에러 : 존재하지 않는 아이디입니다.
+[15:46:25.691][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:46:25.729][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:46:28.026][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 68716 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[15:46:28.027][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:46:28.593][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:46:28.600][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:46:28.600][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:46:28.622][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:46:28.622][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 572 ms
+[15:46:29.189][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[15:46:29.195][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:46:29.201][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.362 seconds (process running for 2.107)
+[15:46:45.343][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:46:45.343][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:46:45.344][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:46:45.393][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:46:45.499][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6659200c
+[15:46:45.500][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:46:45.547][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = '1'
+ {executed in 12 msec}
+[15:46:45.554][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|-------|----------|
+|emp_email |emp_pw |code_name |
+|----------|-------|----------|
+|1         |1      |ROLE_CEO  |
+|----------|-------|----------|
+
+[15:46:45.558][INFO ][rise.cc.service.EmpServiceImpl.loginProc:line31] - 사원 찾기 성공
+[16:00:00.321][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[16:00:00.360][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[16:00:02.015][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 68867 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[16:00:02.017][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:00:02.617][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:00:02.624][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:00:02.624][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:00:02.654][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:00:02.654][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 619 ms
+[16:00:03.261][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[16:00:03.268][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:00:03.277][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.453 seconds (process running for 1.808)
+[16:00:11.835][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:00:11.836][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[16:00:11.837][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[16:00:12.257][INFO ][org.springdoc.api.AbstractOpenApiResource.getOpenApi:line387] - Init duration for springdoc-openapi is: 152 ms
+[16:07:25.588][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 69101 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[16:07:25.589][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:07:26.153][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:07:26.159][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:07:26.160][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:07:26.182][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:07:26.182][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 573 ms
+[16:07:26.747][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[16:07:26.753][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:07:26.759][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.359 seconds (process running for 2.157)
+[16:07:49.495][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 69115 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[16:07:49.496][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:07:50.046][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:07:50.052][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:07:50.052][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:07:50.082][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:07:50.082][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 564 ms
+[16:07:50.631][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[16:07:50.636][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:07:50.642][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.323 seconds (process running for 1.601)
+[16:10:40.894][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:10:40.896][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[16:10:40.899][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 3 ms
+[16:10:40.985][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[16:10:41.193][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@58fcba2e
+[16:10:41.195][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[16:10:41.298][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = '1'
+ {executed in 63 msec}
+[16:10:41.305][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|-------|----------|
+|emp_email |emp_pw |code_name |
+|----------|-------|----------|
+|1         |1      |ROLE_CEO  |
+|----------|-------|----------|
+
+[16:10:41.308][INFO ][rise.cc.service.EmpServiceImpl.loginProc:line29] - 사원 찾기 성공
+[16:11:31.292][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[16:11:31.325][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[16:11:33.645][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.8 with PID 69151 (/Users/leeroa/Desktop/DEV/study/ChuckChuck-Server/build/classes/java/main started by leeroa in /Users/leeroa/Desktop/DEV/study/ChuckChuck-Server)
+[16:11:33.646][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:11:34.171][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:11:34.177][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:11:34.177][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:11:34.203][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:11:34.203][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 538 ms
+[16:11:34.725][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [/Users/leeroa/.keystore] using alias [tomcat] with trust store [null]
+[16:11:34.731][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:11:34.737][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 1.259 seconds (process running for 2.005)

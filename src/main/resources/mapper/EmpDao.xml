@@ -2,7 +2,25 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="rise.cc.dao.EmpDao">
-    <select id="loginProc" parameterType="Map" resultType="rise.cc.dto.Employees">
+    <select id="loginProc" parameterType="rise.cc.dto.Employees" resultType="rise.cc.dto.Employees">
+        SELECT
+            CC_EMP.EMP_EMAIL,
+            CC_EMP.EMP_PW,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+                INNER JOIN
+            CC_CODE
+            ON
+                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            EMP_RETIRE_DT IS NULL
+          AND
+            EMP_ACCOUNT_STATUS = 'Y'
+          AND
+            EMP_EMAIL = #{empEmail}
+    </select>
+    <select id="getEmp" parameterType="Map" resultType="rise.cc.dto.Employees">
         SELECT
             CC_EMP.EMP_ID,
             CC_EMP.EMP_EMAIL,
@@ -34,22 +52,11 @@
         ON
             CC_EMP.ROLE_ID = CC_CODE.CODE_NO
         WHERE
-            EMP_RETIRE_DT IS NULL
-          AND
-            EMP_ACCOUNT_STATUS = 'Y'
-          AND
-            EMP_EMAIL = #{empEmail}
-          AND
-            EMP_PW = #{empPw}
-    </select>
-
-    <select id="getEmp" parameterType="Map" resultType="rise.cc.dto.Employees">
-        SELECT
-            *
-        FROM
-            CC_EMP
-        WHERE
             1=1
+        AND
+            EMP_RETIRE_DT IS NULL
+        AND
+            EMP_ACCOUNT_STATUS = 'Y'
         <if test="empId != null and !empId.equals('')">
             AND EMP_ID = #{empId}
         </if>

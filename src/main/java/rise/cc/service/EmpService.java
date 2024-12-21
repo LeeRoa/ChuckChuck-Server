@@ -9,9 +9,9 @@ import java.util.Map;
 
 public interface EmpService {
 
-    String loginProc(Map<String, Object> empMap) throws JsonProcessingException;
+    String loginProc(Employees emp) throws JsonProcessingException;
 
-    Employees getEmp(Map<String, Object> empMap);
+    String getEmp(Employees emp) throws JsonProcessingException;
 
-    Integer getEmpCount(Map<String, Object> empMap);
+    String getEmpCount(Employees emp);
 }

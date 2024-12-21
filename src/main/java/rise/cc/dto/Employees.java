@@ -12,7 +12,6 @@ import lombok.ToString;
 import java.util.Date;
 
 @Data
-@ToString
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class Employees {

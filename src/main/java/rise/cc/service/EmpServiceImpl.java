@@ -10,8 +10,6 @@ import rise.cc.dao.EmpDao;
 import rise.cc.dto.Employees;
 import rise.cc.util.JsonUtils;
 
-import java.util.Map;
-
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -21,32 +19,31 @@ public class EmpServiceImpl implements EmpService {
 
     @Transactional
     @Override
-    public String loginProc(Map<String, Object> empMap) throws JsonProcessingException {
-        if (empDao.getEmpCount(empMap) < 1) {
-            System.out.println("1");
-            log.error("로그인 요청 에러 : {}", EmpResultCode.resultMsg(EmpResultCode.ID_NOT_FOUND));
-            return JsonUtils.resultJsonString(EmpResultCode.ID_NOT_FOUND, EmpResultCode.ID_NOT_FOUND_MSG);
+    public String loginProc(Employees emp) throws JsonProcessingException {
+        Employees findEmp = empDao.loginProc(emp);
+        if (findEmp == null) {
+            log.error("로그인 프로세스 요청 에러 : {}", EmpResultCode.resultMsg(EmpResultCode.EMP_NOT_FOUND));
+            return JsonUtils.resultJsonString(EmpResultCode.EMP_NOT_FOUND, EmpResultCode.EMP_NOT_FOUND_MSG);
         }
 
-        Employees employees = empDao.loginProc(empMap);
-
-        if (employees == null) {
-            System.out.println("2");
-            log.error("로그인 요청 에러 : {}", EmpResultCode.resultMsg(EmpResultCode.PASSWORD_INCORRECT));
-            return JsonUtils.resultJsonString(EmpResultCode.PASSWORD_INCORRECT, EmpResultCode.PASSWORD_INCORRECT_MSG);
-        }
-
-        log.info("로그인 성공");
-        return JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "empInfo", employees);
+        log.info("로그인 프로세스 성공");
+        return JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "empInfo", findEmp);
     }
 
     @Override
-    public Employees getEmp(Map<String, Object> empMap) {
-        return empDao.getEmp(empMap);
+    public String getEmp(Employees emp) throws JsonProcessingException {
+        Employees findEmp = empDao.getEmp(emp);
+        if (findEmp == null) {
+            log.error("사원 찾기 요청 에러 : {}", EmpResultCode.resultMsg(EmpResultCode.EMP_NOT_FOUND));
+            return JsonUtils.resultJsonString(EmpResultCode.EMP_NOT_FOUND, EmpResultCode.EMP_NOT_FOUND_MSG);
+        }
+
+        log.info("사원 찾기 성공");
+        return JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "empInfo", findEmp);
     }
 
     @Override
-    public Integer getEmpCount(Map<String, Object> empMap) {
-        return empDao.getEmpCount(empMap);
+    public String getEmpCount(Employees emp) {
+        return null;
     }
 }
