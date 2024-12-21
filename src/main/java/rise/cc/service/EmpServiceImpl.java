@@ -46,4 +46,14 @@ public class EmpServiceImpl implements EmpService {
     public String getEmpCount(Employees emp) {
         return null;
     }
+
+    @Override
+    public String createEmp(Employees emp) {
+        emp.setRoleId("4");
+        if (empDao.createEmp(emp) > 0) {
+            return JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG);
+        }
+
+        return null;
+    }
 }

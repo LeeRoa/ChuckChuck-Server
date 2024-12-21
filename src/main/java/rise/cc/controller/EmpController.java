@@ -44,7 +44,7 @@ public class EmpController {
      * @param emp empId, empEmail 등
      * @return 검색된 회원의 데이터 Json 형식
      */
-    @GetMapping("/findEmp")
+    @GetMapping("")
     public String findEmp(@RequestBody Employees emp) {
         try {
             return empService.getEmp(emp);
@@ -61,8 +61,13 @@ public class EmpController {
         }
     }
 
+    /**
+     * 계정을 생성하는 컨트롤러
+     * @param emp empId, empPhonenum, empBirth, empPw,
+     * @return
+     */
     @PostMapping("")
     public String createEmp(@RequestBody Employees emp) {
-        return null;
+        return empService.createEmp(emp);
     }
 }

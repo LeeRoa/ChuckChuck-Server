@@ -79,5 +79,22 @@
             AND EMP_EMAIL = #{empEmail}
         </if>
     </select>
-
+    <insert id="createEmp" parameterType="rise.cc.dto.Employees">
+        INSERT INTO
+            CC_EMP (
+                EMP_EMAIL,
+                EMP_PHONENUM,
+                EMP_PW,
+                EMP_BIRTH,
+                ROLE_ID
+        )
+        VALUES
+            (
+                #{empEmail},
+                #{empPhonenum},
+                #{empPw},
+                #{empBirth},
+                #{roleId}
+        )
+    </insert>
 </mapper>

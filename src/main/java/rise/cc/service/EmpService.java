@@ -14,4 +14,6 @@ public interface EmpService {
     String getEmp(Employees emp) throws JsonProcessingException;
 
     String getEmpCount(Employees emp);
+
+    String createEmp(Employees emp);
 }
