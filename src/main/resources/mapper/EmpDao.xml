@@ -80,6 +80,14 @@
         </if>
     </select>
     <insert id="createEmp" parameterType="rise.cc.dto.Employees">
+        <selectKey resultType="int" keyProperty="roleId">
+            SELECT
+                ROLE_ID
+            FROM
+                CC_CDOE
+            WHERE
+                CODE_NAME = #{role}
+        </selectKey>
         INSERT INTO
             CC_EMP (
                 EMP_EMAIL,

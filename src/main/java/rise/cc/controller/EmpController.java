@@ -64,7 +64,7 @@ public class EmpController {
     /**
      * 계정을 생성하는 컨트롤러
      * @param emp empId, empPhonenum, empBirth, empPw,
-     * @return
+     * @return 처리 결과 값 Json String
      */
     @PostMapping("")
     public String createEmp(@RequestBody Employees emp) {

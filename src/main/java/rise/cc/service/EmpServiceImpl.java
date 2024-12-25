@@ -3,6 +3,7 @@ package rise.cc.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rise.cc.common.EmpResultCode;
@@ -49,11 +50,19 @@ public class EmpServiceImpl implements EmpService {
 
     @Override
     public String createEmp(Employees emp) {
-        emp.setRoleId("4");
-        if (empDao.createEmp(emp) > 0) {
-            return JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG);
+        try {
+            if (empDao.createEmp(emp) > 0) {
+                log.info("계정 생성 성공. 생성된 계정 : {}", emp.getEmpId());
+                return JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG);
+            }
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+            log.error("계정 생성 DB 에러 : {}", e.getMessage());
+            return JsonUtils.resultJsonString(EmpResultCode.DB_ERROR, EmpResultCode.DB_ERROR_MSG);
+        } catch (Exception e) {
+            log.error("계정 생성 에러 : {}", e.getMessage());
+            e.printStackTrace();
         }
-
-        return null;
+        return JsonUtils.resultJsonString(EmpResultCode.ERROR, EmpResultCode.ERROR_MSG);
     }
 }
