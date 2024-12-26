@@ -9,10 +9,10 @@
             CC_CODE.CODE_NAME AS ROLE
         FROM
             CC_EMP
-                INNER JOIN
+        INNER JOIN
             CC_CODE
-            ON
-                CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
         WHERE
             EMP_RETIRE_DT IS NULL
           AND
@@ -64,7 +64,6 @@
             AND EMP_EMAIL = #{empEmail}
         </if>
     </select>
-
     <select id="getEmpCount" parameterType="Map" resultType="int">
         SELECT
             COUNT(*)
@@ -80,11 +79,11 @@
         </if>
     </select>
     <insert id="createEmp" parameterType="rise.cc.dto.Employees">
-        <selectKey resultType="int" keyProperty="roleId">
+        <selectKey resultType="String" keyProperty="roleId">
             SELECT
-                ROLE_ID
+                CODE_ID
             FROM
-                CC_CDOE
+                CC_CODE
             WHERE
                 CODE_NAME = #{role}
         </selectKey>
@@ -105,4 +104,72 @@
                 #{roleId}
         )
     </insert>
+    <update id="updateEmp" parameterType="rise.cc.dto.Employees">
+        UPDATE
+            CC_EMP
+        <set>
+            <if test="empPhonenum != null and !empPhonenum.equals('')">
+                EMP_PHONENUM = #{empPhonenum},
+            </if>
+            <if test="empPw != null and !empPw.equals('')">
+                EMP_PW = #{empPw},
+            </if>
+            <if test="empName != null and !empName.equals('')">
+                EMP_NAME = #{empName},
+            </if>
+            <if test="empBirth != null and !empBirth.equals('')">
+                EMP_BIRTH = #{empBirth},
+            </if>
+            <if test="roleLevel > 1">
+                <if test="empAccountStatus != null and !empAccountStatus.equals('')">
+                    EMP_ACCOUNT_STATUS = #{empAccountStatus},
+                </if>
+                <if test="empPosition != null and !empPosition.equals('')">
+                    EMP_POSITION = #{empPosition},
+                </if>
+                <if test="pwErrorCnt != null and !pwErrorCnt.equals('')">
+                    PW_ERROR_CNT = #{pwErrorCnt},
+                </if>
+                <if test="empJoinDt != null and !empJoinDt.equals('')">
+                    EMP_JOIN_DT = #{empJoinDt},
+                </if>
+                <if test="empRetireDt != null and !empRetireDt.equals('')">
+                    EMP_RETIRE_DT = #{empRetireDt},
+                </if>
+                <if test="departmentId != null and !departmentId.equals('')">
+                    DEPARTMENT_ID = #{departmentId},
+                </if>
+                <if test="rankId != null and !rankId.equals('')">
+                    RANK_ID = #{rankId},
+                </if>
+                <if test="roleId != null and !roleId.equals('')">
+                    ROLE_ID = #{roleId},
+                </if>
+                <if test="directBossId != null and !directBossId.equals('')">
+                    DIRECT_BOSS_ID = #{directBossId},
+                </if>
+            </if>
+        </set>
+        WHERE
+            1=1
+        <if test="empId != null and !empId.equals('')">
+            AND EMP_ID = #{empId}
+        </if>
+    </update>
+    <select id="getRole" parameterType="rise.cc.dto.Employees" resultType="rise.cc.dto.Employees">
+        SELECT
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+        <if test="empId != null and !empId.equals('')">
+            AND EMP_ID = #{empId}
+        </if>
+    </select>
 </mapper>

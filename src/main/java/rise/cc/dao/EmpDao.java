@@ -10,4 +10,6 @@ public interface EmpDao {
     Employees getEmp(Employees emp) throws DataAccessException;
     Integer getEmpCount(Employees emp) throws DataAccessException;
     Integer createEmp(Employees emp) throws DataAccessException;
+    Integer updateEmp(Employees emp) throws DataAccessException;
+    Employees getRole(Employees emp) throws DataAccessException;
 }

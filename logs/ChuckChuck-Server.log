@@ -16,3 +16,1651 @@
 [12:13:45.196][WARN ][com.zaxxer.hikari.pool.HikariPool.run:line804] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s189ms).
 [12:15:50.374][WARN ][com.zaxxer.hikari.pool.HikariPool.run:line804] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s994ms).
 [12:18:29.076][WARN ][com.zaxxer.hikari.pool.HikariPool.run:line804] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s181ms).
+[09:57:32.548][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 2968 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[09:57:32.551][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[09:57:34.011][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[09:57:34.026][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[09:57:34.026][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[09:57:34.090][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[09:57:34.090][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1491 ms
+[09:57:35.491][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[09:57:35.518][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[09:57:35.528][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.51 seconds (process running for 4.283)
+[13:39:54.948][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 26040 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[13:39:54.951][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[13:39:56.438][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[13:39:56.456][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[13:39:56.457][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[13:39:56.545][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[13:39:56.546][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1538 ms
+[13:39:58.154][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[13:39:58.171][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[13:39:58.181][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.859 seconds (process running for 4.687)
+[13:40:51.325][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[13:40:51.326][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[13:40:51.328][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 2 ms
+[13:40:52.068][INFO ][org.springdoc.api.AbstractOpenApiResource.getOpenApi:line387] - Init duration for springdoc-openapi is: 260 ms
+[14:14:49.864][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 1276 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[14:14:49.867][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[14:14:51.164][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[14:14:51.178][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[14:14:51.178][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[14:14:51.240][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[14:14:51.240][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1323 ms
+[14:14:52.317][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[14:14:52.333][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[14:14:52.341][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.978 seconds (process running for 3.57)
+[14:18:34.340][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 20624 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[14:18:34.344][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[14:18:35.695][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[14:18:35.717][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[14:18:35.718][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[14:18:35.781][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[14:18:35.781][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1381 ms
+[14:18:37.013][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[14:18:37.029][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[14:18:37.040][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.18 seconds (process running for 3.788)
+[14:38:56.835][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:38:56.837][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[14:38:56.839][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[14:38:57.534][INFO ][org.springdoc.api.AbstractOpenApiResource.getOpenApi:line387] - Init duration for springdoc-openapi is: 261 ms
+[14:39:13.354][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[14:39:13.545][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@bb1e0a9
+[14:39:13.549][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[14:39:13.584][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_EMAIL = '1' 
+        WHERE
+            EMP_ID = '1'
+ {executed in 11 msec}
+[14:39:13.592][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line104] - 계정 정보 변경 성공. 변경된 계정 : 1
+[14:40:18.591][ERROR][jdbc.sqltiming.exceptionOccured:line154] - 1. PreparedStatement.execute() FAILED! UPDATE
+            CC_EMP
+         SET EMP_EMAIL = '2' 
+        WHERE
+            EMP_ID = '1'
+ {FAILED after 11 msec}
+java.sql.SQLIntegrityConstraintViolationException: (conn=1119) Duplicate entry '2' for key 'EMP_EMAIL'
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:70)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:158)
+	at org.mariadb.jdbc.MariaDbStatement.executeExceptionEpilogue(MariaDbStatement.java:262)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:229)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:149)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.updateEmp(Unknown Source)
+	at rise.cc.service.EmpServiceImpl.updateEmp(EmpServiceImpl.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at rise.cc.service.EmpServiceImpl$$SpringCGLIB$$0.updateEmp(<generated>)
+	at rise.cc.controller.AdminController.updateEmp(AdminController.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: Duplicate entry '2' for key 'EMP_EMAIL'
+	at org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException.of(MariaDbSqlException.java:34)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:195)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:178)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:322)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:220)
+	... 78 common frames omitted
+Caused by: java.sql.SQLException: Duplicate entry '2' for key 'EMP_EMAIL'
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1693)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1555)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1518)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:319)
+	... 79 common frames omitted
+[14:40:18.742][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line108] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=1119) Duplicate entry '2' for key 'EMP_EMAIL'
+### The error may exist in file [C:\Study\ChuckChuck\ChuckChuck-Server\build\resources\main\mapper\EmpDao.xml]
+### The error may involve rise.cc.dao.EmpDao.updateEmp-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE             CC_EMP          SET EMP_EMAIL = ?          WHERE             EMP_ID = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=1119) Duplicate entry '2' for key 'EMP_EMAIL'
+; (conn=1119) Duplicate entry '2' for key 'EMP_EMAIL'
+[14:41:50.385][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[14:41:50.455][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[14:41:56.252][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 432 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[14:41:56.256][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[14:41:57.743][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[14:41:57.755][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[14:41:57.756][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[14:41:57.817][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[14:41:57.818][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1498 ms
+[14:41:58.902][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[14:41:58.917][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[14:41:58.926][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.476 seconds (process running for 4.621)
+[14:42:48.820][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:42:48.821][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[14:42:48.825][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 3 ms
+[14:42:49.031][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[14:42:50.394][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1aeffc02
+[14:42:50.397][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[14:42:50.433][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '12' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 11 msec}
+[14:42:50.443][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line104] - 계정 정보 변경 성공. 변경된 계정 : 1
+[14:43:18.872][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[14:43:18.872][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line104] - 계정 정보 변경 성공. 변경된 계정 : 1
+[14:46:58.558][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[14:46:58.628][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[14:47:03.890][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 5532 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[14:47:03.903][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[14:47:05.275][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[14:47:05.294][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[14:47:05.295][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[14:47:05.353][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[14:47:05.353][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1363 ms
+[14:47:06.381][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[14:47:06.396][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[14:47:06.404][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.343 seconds (process running for 4.355)
+[14:47:11.053][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:47:11.053][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[14:47:11.054][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[14:47:11.597][INFO ][org.springdoc.api.AbstractOpenApiResource.getOpenApi:line387] - Init duration for springdoc-openapi is: 209 ms
+[14:47:25.587][WARN ][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException:line247] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name]
+[14:47:43.179][ERROR][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet].log:line175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at rise.cc.service.EmpServiceImpl.updateEmp(EmpServiceImpl.java:103)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at rise.cc.service.EmpServiceImpl$$SpringCGLIB$$0.updateEmp(<generated>)
+	at rise.cc.controller.AdminController.updateEmp(AdminController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[14:48:07.306][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 5436 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[14:48:07.309][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[14:48:08.556][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[14:48:08.569][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[14:48:08.570][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[14:48:08.627][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[14:48:08.627][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1278 ms
+[14:48:09.693][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[14:48:09.707][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[14:48:09.716][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.974 seconds (process running for 3.849)
+[14:48:15.421][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:48:15.422][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[14:48:15.423][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[14:48:15.518][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line111] - 계정 정보 변경 ID : 1, 에러 : 필수 입력 값이 입력 또는 설정되지 않았습니다.
+[15:10:52.028][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 8328 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:10:52.031][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:10:53.439][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:10:53.460][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:10:53.460][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:10:53.520][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:10:53.521][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1434 ms
+[15:10:54.625][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:10:54.642][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:10:54.655][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.3 seconds (process running for 4.968)
+[15:10:56.561][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:10:56.561][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:10:56.562][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:10:56.686][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:11:29.978][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 20628 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:11:29.981][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:11:31.639][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:11:31.652][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:11:31.653][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:11:31.716][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:11:31.716][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1674 ms
+[15:11:32.838][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:11:32.855][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:11:32.867][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.871 seconds (process running for 4.858)
+[15:11:32.978][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:11:32.979][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:11:32.980][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:11:33.121][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line115] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:14:11.322][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 22104 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:14:11.325][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:14:12.943][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:14:12.961][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:14:12.961][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:14:13.026][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:14:13.027][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1646 ms
+[15:14:14.333][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:14:14.365][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:14:14.378][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.627 seconds (process running for 4.703)
+[15:14:23.442][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:14:23.442][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:14:23.443][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:14:23.589][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:14:59.874][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 14524 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:14:59.878][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:15:01.190][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:15:01.204][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:15:01.205][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:15:01.264][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:15:01.264][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1322 ms
+[15:15:02.360][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:15:02.376][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:15:02.384][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.981 seconds (process running for 3.547)
+[15:15:03.632][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:15:03.632][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:15:03.633][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:15:03.777][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:15:42.626][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 25996 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:15:42.630][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:15:43.926][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:15:43.940][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:15:43.941][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:15:44.005][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:15:44.012][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1325 ms
+[15:15:45.219][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:15:45.237][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:15:45.248][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.083 seconds (process running for 3.663)
+[15:15:52.954][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:15:52.955][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:15:52.956][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:15:53.100][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:16:02.679][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 17676 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:16:02.683][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:16:04.025][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:16:04.038][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:16:04.039][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:16:04.101][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:16:04.102][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1358 ms
+[15:16:05.202][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:16:05.218][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:16:05.226][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.025 seconds (process running for 3.631)
+[15:16:06.804][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:16:06.804][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:16:06.805][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 0 ms
+[15:16:06.958][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:16:29.967][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 26944 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:16:29.970][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:16:31.244][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:16:31.257][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:16:31.258][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:16:31.327][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:16:31.327][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1315 ms
+[15:16:32.466][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:16:32.482][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:16:32.492][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.086 seconds (process running for 3.714)
+[15:16:32.842][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:16:32.843][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:16:32.843][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 0 ms
+[15:16:32.975][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:16:33.125][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@797fb7b5
+[15:16:33.127][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:16:33.147][ERROR][jdbc.sqltiming.exceptionOccured:line154] - 1. PreparedStatement.execute() FAILED!  {FAILED after 11 msec}
+java.sql.SQLSyntaxErrorException: (conn=1140) Query was empty
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:158)
+	at org.mariadb.jdbc.MariaDbStatement.executeExceptionEpilogue(MariaDbStatement.java:262)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:229)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:149)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.updateEmp(Unknown Source)
+	at rise.cc.service.EmpServiceImpl.updateEmp(EmpServiceImpl.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at rise.cc.service.EmpServiceImpl$$SpringCGLIB$$0.updateEmp(<generated>)
+	at rise.cc.controller.AdminController.updateEmp(AdminController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: Query was empty
+	at org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException.of(MariaDbSqlException.java:34)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:195)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:178)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:322)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:220)
+	... 78 common frames omitted
+Caused by: java.sql.SQLException: Query was empty
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1693)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1555)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1518)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:319)
+	... 79 common frames omitted
+[15:16:33.239][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=1140) Query was empty
+### The error may exist in file [C:\Study\ChuckChuck\ChuckChuck-Server\build\resources\main\mapper\EmpDao.xml]
+### The error may involve rise.cc.dao.EmpDao.updateEmp-Inline
+### The error occurred while setting parameters
+### SQL: 
+### Cause: java.sql.SQLSyntaxErrorException: (conn=1140) Query was empty
+; bad SQL grammar []
+[15:16:46.153][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:16:46.237][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:16:49.016][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 27164 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:16:49.020][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:16:50.331][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:16:50.344][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:16:50.344][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:16:50.410][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:16:50.411][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1337 ms
+[15:16:51.674][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:16:51.691][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:16:51.701][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.257 seconds (process running for 3.882)
+[15:18:08.628][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:18:08.630][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:18:08.630][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 0 ms
+[15:18:08.780][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:18:08.931][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@27b67a8e
+[15:18:08.934][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:18:08.958][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 6 msec}
+[15:18:08.969][ERROR][jdbc.sqltiming.exceptionOccured:line154] - 1. PreparedStatement.execute() FAILED! SELECT
+                CODE_NAME
+            FROM
+                CC_CDOE
+            WHERE
+                1=1
+               AND CODE_NAME = 'ROLE_USER'
+ {FAILED after 8 msec}
+java.sql.SQLSyntaxErrorException: (conn=1150) Table 'approval.cc_cdoe' doesn't exist
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:158)
+	at org.mariadb.jdbc.MariaDbStatement.executeExceptionEpilogue(MariaDbStatement.java:262)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:229)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:149)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:65)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.executor.keygen.SelectKeyGenerator.processGeneratedKeys(SelectKeyGenerator.java:67)
+	at org.apache.ibatis.executor.keygen.SelectKeyGenerator.processAfter(SelectKeyGenerator.java:54)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:52)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.updateEmp(Unknown Source)
+	at rise.cc.service.EmpServiceImpl.updateEmp(EmpServiceImpl.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at rise.cc.service.EmpServiceImpl$$SpringCGLIB$$0.updateEmp(<generated>)
+	at rise.cc.controller.AdminController.updateEmp(AdminController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: Table 'approval.cc_cdoe' doesn't exist
+	at org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException.of(MariaDbSqlException.java:34)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:195)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:178)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:322)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:220)
+	... 87 common frames omitted
+Caused by: java.sql.SQLException: Table 'approval.cc_cdoe' doesn't exist
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1693)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1555)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1518)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:319)
+	... 88 common frames omitted
+[15:18:09.069][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. Error selecting key or setting result to parameter object. Cause: java.sql.SQLSyntaxErrorException: (conn=1150) Table 'approval.cc_cdoe' doesn't exist
+; bad SQL grammar []
+[15:19:13.252][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:19:13.319][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:19:16.103][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 25208 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:19:16.106][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:19:17.430][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:19:17.442][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:19:17.442][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:19:17.503][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:19:17.503][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1340 ms
+[15:19:18.689][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:19:18.707][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:19:18.717][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.112 seconds (process running for 3.675)
+[15:19:26.163][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:19:26.164][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:19:26.165][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 0 ms
+[15:19:26.324][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:19:26.482][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@67e62cf6
+[15:19:26.485][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:19:26.508][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 10 msec}
+[15:19:26.520][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+                CODE_NAME
+            FROM
+                CC_CODE
+            WHERE
+                1=1
+               AND CODE_NAME = 'ROLE_USER'
+ {executed in 7 msec}
+[15:19:26.532][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|
+|code_name |
+|----------|
+|ROLE_USER |
+|----------|
+
+[15:19:26.543][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line107] - 계정 정보 변경 성공. 변경된 계정 : 1
+[15:19:48.136][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:19:48.209][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:19:50.701][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 18776 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:19:50.704][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:19:52.005][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:19:52.018][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:19:52.019][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:19:52.080][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:19:52.081][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1328 ms
+[15:19:53.242][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:19:53.259][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:19:53.268][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.017 seconds (process running for 3.592)
+[15:19:53.376][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:19:53.377][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:19:53.378][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:19:53.518][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:20:06.416][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 21896 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:20:06.418][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:20:07.734][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:20:07.747][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:20:07.748][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:20:07.805][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:20:07.806][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1330 ms
+[15:20:08.911][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:20:08.926][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:20:08.934][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.02 seconds (process running for 3.612)
+[15:20:14.391][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:20:14.392][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:20:14.393][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:20:14.537][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:20:28.670][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 27100 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:20:28.673][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:20:29.964][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:20:29.977][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:20:29.978][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:20:30.033][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:20:30.034][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1313 ms
+[15:20:31.097][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:20:31.112][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:20:31.122][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.912 seconds (process running for 3.463)
+[15:20:55.590][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:20:55.590][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:20:55.591][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:20:55.728][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:20:56.868][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@63f2b697
+[15:20:56.870][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:20:56.888][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 7 msec}
+[15:20:56.903][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+                CODE_NAME
+            FROM
+                CC_CODE
+            WHERE
+                1=1
+               AND CODE_NAME = 'ROLE_USER'
+ {executed in 12 msec}
+[15:20:56.912][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|
+|code_name |
+|----------|
+|ROLE_USER |
+|----------|
+
+[15:20:56.920][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line107] - 계정 정보 변경 성공. 변경된 계정 : 1
+[15:21:52.173][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:21:52.244][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:21:55.193][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 11012 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:21:55.196][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:21:56.437][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:21:56.452][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:21:56.452][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:21:56.519][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:21:56.520][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1283 ms
+[15:21:57.590][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:21:57.605][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:21:57.615][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.908 seconds (process running for 3.738)
+[15:21:57.837][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:21:57.837][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:21:57.838][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 0 ms
+[15:21:57.977][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[15:21:58.128][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1dd38d32
+[15:21:58.129][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[15:21:58.150][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 10 msec}
+[15:21:58.163][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+                CODE_NAME
+            FROM
+                CC_CODE
+            WHERE
+                1=1
+               AND CODE_NAME = 'ROLE_USER'
+ {executed in 9 msec}
+[15:21:58.172][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|----------|
+|code_name |
+|----------|
+|ROLE_USER |
+|----------|
+
+[15:21:58.180][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line107] - 계정 정보 변경 성공. 변경된 계정 : 1
+[15:42:17.388][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[15:42:17.461][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[15:42:19.992][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 27308 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[15:42:19.995][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[15:42:21.233][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[15:42:21.246][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[15:42:21.246][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[15:42:21.305][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[15:42:21.305][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1265 ms
+[15:42:22.346][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[15:42:22.362][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[15:42:22.371][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.843 seconds (process running for 3.373)
+[15:42:35.265][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:42:35.266][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[15:42:35.268][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[15:42:35.396][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:55:47.207][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[15:55:52.361][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[16:20:10.341][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[16:20:11.722][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@29b34dab
+[16:20:11.726][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[16:20:11.753][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 8 msec}
+[16:20:11.759][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line107] - 계정 정보 변경 성공. 변경된 계정 : 1
+[16:20:15.838][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[16:20:15.838][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line107] - 계정 정보 변경 성공. 변경된 계정 : 1
+[16:20:32.399][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[16:20:32.472][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[16:20:38.906][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 19432 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[16:20:38.909][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:20:40.179][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:20:40.191][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:20:40.193][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:20:40.253][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:20:40.254][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1300 ms
+[16:20:41.307][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[16:20:41.323][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:20:41.331][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.041 seconds (process running for 3.958)
+[16:20:50.775][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:20:50.776][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[16:20:50.778][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 2 ms
+[16:20:51.023][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[16:20:51.203][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@79534d68
+[16:20:51.207][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[16:20:51.234][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[16:20:51.244][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line111] - 계정 정보 변경 성공. 변경된 계정 : 1
+[16:21:20.291][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[16:21:20.358][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[16:21:24.462][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 8008 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[16:21:24.465][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:21:25.938][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:21:25.954][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:21:25.954][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:21:26.035][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:21:26.036][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1520 ms
+[16:21:27.149][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[16:21:27.164][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:21:27.173][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.57 seconds (process running for 4.282)
+[16:39:16.035][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 4616 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[16:39:16.040][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:39:17.907][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:39:17.933][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:39:17.933][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:39:18.028][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:39:18.028][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1927 ms
+[16:39:19.931][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[16:39:19.955][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:39:19.969][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 4.671 seconds (process running for 5.652)
+[16:39:43.555][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:39:43.556][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[16:39:43.559][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 2 ms
+[16:39:43.739][WARN ][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException:line247] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('.' (code 46)): was expecting comma to separate Object entries]
+[16:40:01.035][WARN ][org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.logException:line247] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value]
+[16:40:43.450][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[16:40:45.016][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2a776b60
+[16:40:45.020][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[16:40:45.048][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 6 msec}
+[16:40:45.060][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+                ROLE_ID
+            FROM
+                CC_EMP
+            WHERE
+                1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[16:40:45.078][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|
+|role_id |
+|--------|
+|1       |
+|--------|
+
+[16:40:45.088][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[16:42:01.581][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 8 msec}
+[16:42:01.590][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+                ROLE_ID
+            FROM
+                CC_EMP
+            WHERE
+                1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[16:42:01.591][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|
+|role_id |
+|--------|
+|1       |
+|--------|
+
+[16:42:01.592][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. null
+[16:43:27.878][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[16:43:27.960][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[16:43:30.907][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 10368 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[16:43:30.910][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:43:32.130][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:43:32.146][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:43:32.146][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:43:32.204][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:43:32.204][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1229 ms
+[16:43:33.247][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[16:43:33.262][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:43:33.271][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.07 seconds (process running for 3.844)
+[16:43:35.627][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:43:35.628][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[16:43:35.629][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 0 ms
+[16:43:35.762][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[16:43:35.904][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@98d0388
+[16:43:35.906][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[16:43:35.925][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 8 msec}
+[16:43:35.934][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+                ROLE_ID
+            FROM
+                CC_EMP
+            WHERE
+                1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 8 msec}
+[16:43:35.943][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|
+|role_id |
+|--------|
+|1       |
+|--------|
+
+[16:43:35.950][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line107] - 계정 정보 변경 성공. 변경된 계정 : 1
+[16:45:16.537][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[16:45:16.608][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[16:45:19.347][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 11272 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[16:45:19.350][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[16:45:20.583][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[16:45:20.599][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[16:45:20.599][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[16:45:20.661][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[16:45:20.661][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1263 ms
+[16:45:21.733][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[16:45:21.754][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[16:45:21.767][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.935 seconds (process running for 3.731)
+[16:45:22.600][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[16:45:22.601][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[16:45:22.603][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 2 ms
+[16:45:22.742][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[16:45:22.878][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@604132c9
+[16:45:22.880][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[16:45:22.901][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[16:45:22.912][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+                ROLE_ID
+            FROM
+                CC_EMP
+            WHERE
+                1=1
+
+                AND EMP_ID = '1'
+
+                AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[16:45:22.921][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|
+|role_id |
+|--------|
+|1       |
+|--------|
+
+[16:45:22.929][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line107] - 계정 정보 변경 성공. 변경된 계정 : 1
+[17:02:20.933][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[17:02:21.001][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[17:02:25.579][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 27632 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:02:25.581][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:02:26.839][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:02:26.853][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:02:26.853][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:02:26.909][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:02:26.909][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1284 ms
+[17:02:28.242][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:02:28.257][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:02:28.266][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.436 seconds (process running for 4.291)
+[17:03:05.598][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 16884 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:03:05.601][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:03:06.968][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:03:06.982][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:03:06.983][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:03:07.043][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:03:07.043][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1387 ms
+[17:03:08.099][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:03:08.113][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:03:08.121][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.986 seconds (process running for 3.565)
+[17:04:37.794][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 21008 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:04:37.798][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:04:39.139][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:04:39.155][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:04:39.155][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:04:39.217][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:04:39.217][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1279 ms
+[17:04:40.399][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:04:40.415][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:04:40.424][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.251 seconds (process running for 4.155)
+[17:04:55.821][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 9556 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:04:55.823][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:04:57.261][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:04:57.282][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:04:57.283][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:04:57.344][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:04:57.344][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1467 ms
+[17:04:58.562][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:04:58.578][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:04:58.586][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.218 seconds (process running for 3.787)
+[17:05:11.159][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 15864 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:05:11.163][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:05:12.556][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:05:12.572][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:05:12.573][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:05:12.640][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:05:12.640][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1418 ms
+[17:05:13.867][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:05:13.886][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:05:13.910][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.259 seconds (process running for 3.838)
+[17:05:26.401][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:05:26.401][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[17:05:26.402][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[17:05:26.525][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[17:05:26.659][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@433b15b7
+[17:05:26.661][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[17:05:26.680][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.ROLE_ID,
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 11 msec}
+[17:05:26.689][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|--------|----------|
+|role_id |col_seq |code_name |
+|--------|--------|----------|
+|1       |3       |ROLE_CEO  |
+|--------|--------|----------|
+
+[17:05:26.708][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1',
+
+                    ROLE_ID = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 10 msec}
+[17:05:26.708][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line108] - 계정 정보 변경 성공. 변경된 계정 : 1
+[17:06:28.239][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[17:06:28.310][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[17:06:32.677][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 12816 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:06:32.683][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:06:34.089][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:06:34.102][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:06:34.104][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:06:34.163][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:06:34.163][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1394 ms
+[17:06:35.203][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:06:35.218][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:06:35.227][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.427 seconds (process running for 4.433)
+[17:06:36.046][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:06:36.046][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[17:06:36.047][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[17:06:36.177][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[17:06:36.324][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@699f8076
+[17:06:36.325][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[17:06:36.347][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.ROLE_ID,
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 12 msec}
+[17:06:36.356][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|--------|----------|
+|role_id |col_seq |code_name |
+|--------|--------|----------|
+|1       |3       |ROLE_CEO  |
+|--------|--------|----------|
+
+[17:06:36.375][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1',
+
+                    ROLE_ID = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 9 msec}
+[17:06:36.376][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line110] - 계정 정보 변경 성공. 변경된 계정 : 1
+[17:07:23.469][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[17:07:23.549][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[17:07:27.598][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 9808 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:07:27.601][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:07:28.807][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:07:28.819][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:07:28.821][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:07:28.880][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:07:28.881][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1234 ms
+[17:07:29.924][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:07:29.937][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:07:29.945][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.049 seconds (process running for 3.816)
+[17:07:30.744][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:07:30.745][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[17:07:30.745][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 0 ms
+[17:07:30.873][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[17:07:30.998][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@67f651d8
+[17:07:31.000][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[17:07:31.018][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.ROLE_ID,
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 6 msec}
+[17:07:31.026][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|--------|----------|
+|role_id |col_seq |code_name |
+|--------|--------|----------|
+|1       |3       |ROLE_CEO  |
+|--------|--------|----------|
+
+[17:07:31.051][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1',
+
+                    ROLE_ID = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 6 msec}
+[17:07:31.052][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line110] - 계정 정보 변경 성공. 변경된 계정 : 1
+[17:09:23.661][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.ROLE_ID,
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 7 msec}
+[17:09:23.662][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|--------|----------|
+|role_id |col_seq |code_name |
+|--------|--------|----------|
+|1       |3       |ROLE_CEO  |
+|--------|--------|----------|
+
+[17:09:23.671][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1',
+
+                    ROLE_ID = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 8 msec}
+[17:09:23.671][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line110] - 계정 정보 변경 성공. 변경된 계정 : 1
+[17:09:28.065][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.ROLE_ID,
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 7 msec}
+[17:09:28.066][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|--------|----------|
+|role_id |col_seq |code_name |
+|--------|--------|----------|
+|1       |3       |ROLE_CEO  |
+|--------|--------|----------|
+
+[17:09:28.075][ERROR][jdbc.sqltiming.exceptionOccured:line154] - 1. PreparedStatement.execute() FAILED! UPDATE
+            CC_EMP
+         SET EMP_PW = '1',
+
+                    EMP_ERROR_CNT = '0',
+
+                    ROLE_ID = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {FAILED after 8 msec}
+java.sql.SQLSyntaxErrorException: (conn=1260) Unknown column 'EMP_ERROR_CNT' in 'field list'
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:158)
+	at org.mariadb.jdbc.MariaDbStatement.executeExceptionEpilogue(MariaDbStatement.java:262)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:229)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.execute(ClientSidePreparedStatement.java:149)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.updateEmp(Unknown Source)
+	at rise.cc.service.EmpServiceImpl.updateEmp(EmpServiceImpl.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at rise.cc.service.EmpServiceImpl$$SpringCGLIB$$0.updateEmp(<generated>)
+	at rise.cc.controller.AdminController.updateEmp(AdminController.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException: Unknown column 'EMP_ERROR_CNT' in 'field list'
+	at org.mariadb.jdbc.internal.util.exceptions.MariaDbSqlException.of(MariaDbSqlException.java:34)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:195)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.exceptionWithQuery(AbstractQueryProtocol.java:178)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:322)
+	at org.mariadb.jdbc.ClientSidePreparedStatement.executeInternal(ClientSidePreparedStatement.java:220)
+	... 78 common frames omitted
+Caused by: java.sql.SQLException: Unknown column 'EMP_ERROR_CNT' in 'field list'
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readErrorPacket(AbstractQueryProtocol.java:1693)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.readPacket(AbstractQueryProtocol.java:1555)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.getResult(AbstractQueryProtocol.java:1518)
+	at org.mariadb.jdbc.internal.protocol.AbstractQueryProtocol.executeQuery(AbstractQueryProtocol.java:319)
+	... 79 common frames omitted
+[17:09:28.181][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line117] - 계정 정보 변경 ID : 1, DB 에러 로그 확인 필요. 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=1260) Unknown column 'EMP_ERROR_CNT' in 'field list'
+### The error may exist in file [C:\Study\ChuckChuck\ChuckChuck-Server\build\resources\main\mapper\EmpDao.xml]
+### The error may involve rise.cc.dao.EmpDao.updateEmp-Inline
+### The error occurred while setting parameters
+### SQL: UPDATE             CC_EMP          SET EMP_PW = ?,                                                                                                                            EMP_ERROR_CNT = ?,                                                                                                                           ROLE_ID = ?          WHERE             1=1                       AND EMP_ID = ?                                 AND EMP_EMAIL = ?
+### Cause: java.sql.SQLSyntaxErrorException: (conn=1260) Unknown column 'EMP_ERROR_CNT' in 'field list'
+; bad SQL grammar []
+[17:10:03.599][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[17:10:03.671][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[17:10:06.139][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 20204 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:10:06.143][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:10:07.518][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:10:07.532][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:10:07.532][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:10:07.600][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:10:07.601][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1404 ms
+[17:10:08.681][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:10:08.696][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:10:08.704][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.031 seconds (process running for 3.663)
+[17:10:11.828][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:10:11.828][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[17:10:11.829][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[17:10:11.952][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[17:10:12.100][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@360ae062
+[17:10:12.101][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[17:10:12.120][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_EMP.ROLE_ID,
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 8 msec}
+[17:10:12.129][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|--------|----------|
+|role_id |col_seq |code_name |
+|--------|--------|----------|
+|1       |3       |ROLE_CEO  |
+|--------|--------|----------|
+
+[17:10:12.153][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1',
+
+                    PW_ERROR_CNT = '0',
+
+                    ROLE_ID = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 6 msec}
+[17:10:12.153][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line110] - 계정 정보 변경 성공. 변경된 계정 : 1
+[17:10:44.514][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[17:10:44.594][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.
+[17:10:49.277][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 5664 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:10:49.281][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:10:50.883][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:10:50.906][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:10:50.907][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:10:50.965][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:10:50.966][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1549 ms
+[17:10:52.246][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:10:52.260][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:10:52.269][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 3.888 seconds (process running for 4.868)
+[17:10:56.049][INFO ][rise.cc.ChuckChuckServerApplication.logStarting:line50] - Starting ChuckChuckServerApplication using Java 17.0.13 with PID 23208 (C:\Study\ChuckChuck\ChuckChuck-Server\build\classes\java\main started by lra in C:\Study\ChuckChuck\ChuckChuck-Server)
+[17:10:56.052][INFO ][rise.cc.ChuckChuckServerApplication.logStartupProfileInfo:line654] - No active profile set, falling back to 1 default profile: "default"
+[17:10:57.357][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize:line109] - Tomcat initialized with port 28444 (https)
+[17:10:57.370][INFO ][org.apache.catalina.core.StandardService.log:line173] - Starting service [Tomcat]
+[17:10:57.371][INFO ][org.apache.catalina.core.StandardEngine.log:line173] - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[17:10:57.431][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring embedded WebApplicationContext
+[17:10:57.432][INFO ][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:line296] - Root WebApplicationContext: initialization completed in 1316 ms
+[17:10:58.543][INFO ][org.apache.tomcat.util.net.NioEndpoint.certificate.log:line173] - Connector [https-jsse-nio-28444], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\lra\.keystore] using alias [tomcat] with trust store [null]
+[17:10:58.558][INFO ][org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start:line241] - Tomcat started on port 28444 (https) with context path ''
+[17:10:58.568][INFO ][rise.cc.ChuckChuckServerApplication.logStarted:line56] - Started ChuckChuckServerApplication in 2.966 seconds (process running for 3.559)
+[17:11:41.478][INFO ][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:line173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:11:41.479][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line532] - Initializing Servlet 'dispatcherServlet'
+[17:11:41.480][INFO ][org.springframework.web.servlet.DispatcherServlet.initServletBean:line554] - Completed initialization in 1 ms
+[17:11:41.610][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line110] - HikariPool-1 - Starting...
+[17:11:41.748][INFO ][com.zaxxer.hikari.pool.HikariPool.checkFailFast:line565] - HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@45bed9c
+[17:11:41.750][INFO ][com.zaxxer.hikari.HikariDataSource.getConnection:line123] - HikariPool-1 - Start completed.
+[17:11:41.772][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 13 msec}
+[17:11:41.783][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|----------|
+|col_seq |code_name |
+|--------|----------|
+|3       |ROLE_CEO  |
+|--------|----------|
+
+[17:11:41.811][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1',
+
+                    PW_ERROR_CNT = '0' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '1'
+
+            AND EMP_EMAIL = '1'
+ {executed in 10 msec}
+[17:11:41.813][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line110] - 계정 정보 변경 성공. 변경된 계정 : 1
+[17:11:56.617][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_EMAIL = '5'
+ {executed in 10 msec}
+[17:11:56.618][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|----------|
+|col_seq |code_name |
+|--------|----------|
+|--------|----------|
+
+[17:11:56.619][ERROR][rise.cc.service.EmpServiceImpl.updateEmp:line114] - 계정 정보 변경 ID : null, 에러 : 필수 입력 값이 입력 또는 설정되지 않았습니다.
+[17:12:51.728][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_EMAIL = '3'
+ {executed in 11 msec}
+[17:12:51.729][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|----------|
+|col_seq |code_name |
+|--------|----------|
+|1       |ROLE_EMP  |
+|--------|----------|
+
+[17:12:51.740][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+            AND EMP_EMAIL = '3'
+ {executed in 9 msec}
+[17:12:51.740][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line110] - 계정 정보 변경 성공. 변경된 계정 : null
+[17:13:36.645][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - SELECT
+            CC_CODE.COL_SEQ AS ROLE_LEVEL,
+            CC_CODE.CODE_NAME AS ROLE
+        FROM
+            CC_EMP
+        INNER JOIN
+            CC_CODE
+        ON
+            CC_EMP.ROLE_ID = CC_CODE.CODE_NO
+        WHERE
+            1=1
+
+            AND EMP_ID = '3'
+ {executed in 11 msec}
+[17:13:36.646][INFO ][jdbc.resultsettable.resultSetCollected:line610] - 
+|--------|----------|
+|col_seq |code_name |
+|--------|----------|
+|1       |ROLE_EMP  |
+|--------|----------|
+
+[17:13:36.659][INFO ][jdbc.sqltiming.sqlTimingOccurred:line373] - UPDATE
+            CC_EMP
+         SET EMP_PW = '1' 
+        WHERE
+            1=1
+
+            AND EMP_ID = '3'
+ {executed in 12 msec}
+[17:13:36.660][INFO ][rise.cc.service.EmpServiceImpl.updateEmp:line110] - 계정 정보 변경 성공. 변경된 계정 : 3
+[17:19:52.694][INFO ][com.zaxxer.hikari.HikariDataSource.close:line350] - HikariPool-1 - Shutdown initiated...
+[17:19:52.768][INFO ][com.zaxxer.hikari.HikariDataSource.close:line352] - HikariPool-1 - Shutdown completed.

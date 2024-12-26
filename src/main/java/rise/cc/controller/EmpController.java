@@ -1,13 +1,10 @@
 package rise.cc.controller;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import rise.cc.common.ResultCode;
 import rise.cc.dto.Employees;
 import rise.cc.service.EmpService;
-import rise.cc.util.JsonUtils;
 
 @Slf4j
 @RestController
@@ -24,19 +21,7 @@ public class EmpController {
      */
     @PostMapping("/login")
     public String login(@RequestBody Employees emp) {
-        try {
-            return empService.loginProc(emp);
-        } catch (NullPointerException e) {
-            log.error("로그인 프로세스 요청 에러 : {}", ResultCode.resultMsg(ResultCode.NO_REQUIRED_PARAM));
-            return JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, ResultCode.NO_REQUIRED_PARAM_MSG);
-        } catch (JsonProcessingException e) {
-            log.error("로그인 프로세스 요청 에러 : {}", ResultCode.resultMsg(ResultCode.FORMAT_ERROR));
-            return JsonUtils.resultJsonString(ResultCode.FORMAT_ERROR, ResultCode.FORMAT_ERROR_MSG);
-        } catch (Exception e) {
-            log.error("로그인 프로세스 요청 에러 : {}", e.getMessage());
-            e.printStackTrace();
-            return JsonUtils.resultJsonString(ResultCode.ERROR, ResultCode.ERROR_MSG);
-        }
+        return empService.loginProc(emp);
     }
 
     /**
@@ -46,19 +31,7 @@ public class EmpController {
      */
     @GetMapping("")
     public String findEmp(@RequestBody Employees emp) {
-        try {
-            return empService.getEmp(emp);
-        } catch (NullPointerException e) {
-            log.error("사원 찾기 요청 에러 : {}", ResultCode.resultMsg(ResultCode.NO_REQUIRED_PARAM));
-            return JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, ResultCode.NO_REQUIRED_PARAM_MSG);
-        } catch (JsonProcessingException e) {
-            log.error("사원 찾기 에러 : {}", ResultCode.resultMsg(ResultCode.FORMAT_ERROR));
-            return JsonUtils.resultJsonString(ResultCode.FORMAT_ERROR, ResultCode.FORMAT_ERROR_MSG);
-        } catch (Exception e) {
-            log.error("사원 찾기 에러 : {}", e.getMessage());
-            e.printStackTrace();
-            return JsonUtils.resultJsonString(ResultCode.ERROR, ResultCode.ERROR_MSG);
-        }
+        return empService.getEmp(emp);
     }
 
     /**

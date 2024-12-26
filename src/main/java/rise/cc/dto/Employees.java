@@ -53,4 +53,5 @@ public class Employees {
     /* cc_code */
     private String rankName;
     private String role;
+    private String roleLevel; // col_seq 컬럼과 같은 데이터
 }

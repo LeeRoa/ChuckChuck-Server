@@ -22,8 +22,8 @@ server:
   servlet:
     context-path: /
   ssl:
-    key-store: src/main/resources/config/tomcat.jks
-    key-store-password: 1qazxsw2#EDC
+    key-store: src/main/resources/config/keystore.jks
+    key-store-password: cc0914!@
   port: 28444
 
 # Swagger-ui Setting
