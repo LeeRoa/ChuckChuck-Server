@@ -1,14 +1,17 @@
 package rise.cc.dao;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.dao.DataAccessException;
 import rise.cc.dto.Employees;
 
-import java.util.Map;
+import java.util.List;
 
 @Mapper
 public interface EmpDao {
-    Employees loginProc(Map<String, Object> empMap);
-    Employees getEmp(Map<String, Object> empMap);
-
-    Integer getEmpCount(Map<String, Object> empMap);
+    Employees loginProc(Employees emp) throws DataAccessException;
+    List<Employees> getEmp(Employees emp) throws DataAccessException;
+    Integer getEmpCount(Employees emp) throws DataAccessException;
+    Integer createEmp(Employees emp) throws DataAccessException;
+    Integer updateEmp(Employees emp) throws DataAccessException;
+    Employees getRole(Employees emp) throws DataAccessException;
 }

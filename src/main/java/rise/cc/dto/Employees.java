@@ -1,18 +1,13 @@
 package rise.cc.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.PropertyNamingStrategies;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
+import rise.cc.common.Role;
 
 import java.util.Date;
 
 @Data
-@ToString
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class Employees {
@@ -31,7 +26,7 @@ public class Employees {
         부서고유ID	        department_id
         직급고유ID	        rank_id
         사업자 번호	        biz_no
-        권한 고유ID	        role_no
+        권한 고유ID	        role_id
         직속상사사원번호	    direct_boss_id
                             spare
      */
@@ -40,16 +35,16 @@ public class Employees {
     private String empPhonenum;
     private String empPw;
     private String empName;
-    private String empBirth;
+    private Date empBirth;
     private String empAccountStatus;
     private String empPosition;
     private String pwErrorCnt;
-    private String empJoinDt;
-    private String empRetireDt;
+    private Date empJoinDt;
+    private Date empRetireDt;
     private String departmentId;
     private String rankId;
     private String bizNo;
-    private String roleNo;
+    private String roleId;
     private String directBossId;
     private String spare;
 
@@ -59,4 +54,19 @@ public class Employees {
     /* cc_code */
     private String rankName;
     private String role;
+    private String roleLevel; // col_seq 컬럼과 같은 데이터
+
+    public void setRole(Role role) {
+        this.role = role.toString();
+        this.roleLevel = getRoleLevelStr(role);
+    }
+
+    public String getRoleLevelStr(Role role) {
+        return switch (role) {
+            case ROLE_CEO -> "3";
+            case ROLE_ADMIN -> "2";
+            case ROLE_EMP -> "1";
+            default -> "0";
+        };
+    }
 }

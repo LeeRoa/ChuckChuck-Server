@@ -1,7 +1,5 @@
 package rise.cc.common;
 
-import org.json.simple.JSONObject;
-
 @SuppressWarnings("unused")
 public class ResultCode {
 
@@ -16,6 +14,9 @@ public class ResultCode {
     public static final String NO_REQUIRED_PARAM = "2";
     public static final String NO_REQUIRED_PARAM_MSG = "필수 입력 값이 입력 또는 설정되지 않았습니다.";
 
+    public static final String DB_ERROR = "3";
+    public static final String DB_ERROR_MSG = "DB 에러";
+
     public static final String ERROR = "100";
     public static final String ERROR_MSG = "처리 실패";
 
@@ -29,6 +30,7 @@ public class ResultCode {
             case SUCCESS -> SUCCESS_MSG;
             case FORMAT_ERROR -> FORMAT_ERROR_MSG;
             case NO_REQUIRED_PARAM -> NO_REQUIRED_PARAM_MSG;
+            case DB_ERROR -> DB_ERROR_MSG;
             default -> ERROR_MSG;
         };
     }

@@ -22,8 +22,8 @@ server:
   servlet:
     context-path: /
   ssl:
-    key-store: src/main/resources/config/tomcat.jks
-    key-store-password: 1qazxsw2#EDC
+    key-store: src/main/resources/config/keystore.jks
+    key-store-password: cc0914!@
   port: 28444
 
 # Swagger-ui Setting
@@ -58,13 +58,11 @@ logging:
   # logback setting
   pattern:
     file: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
-  file:
-    name: C:/logs/ChuckChuck-Server.log
 #    name: ${catalina.base}/logs/ChuckChuck-Server.log
 
   logback:
     rollingpolicy:
-      file-name-pattern: "C:/logs/ChuckChuck-Server.%d{yyyy-MM-dd}.%i.log"
+      file-name-pattern: "logs/ChuckChuck-Server.%d{yyyy-MM-dd}.%i.log"
 #      file-name-pattern: "${catalina.base}/logs/okey-admin.%d{yyyy-MM-dd}.%i.log"
       max-history: 30
       max-file-size: 100MB
