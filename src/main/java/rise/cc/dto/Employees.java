@@ -54,4 +54,9 @@ public class Employees {
     private String rankName;
     private String role;
     private String roleLevel; // col_seq 컬럼과 같은 데이터
+
+    public void setRole(String role) {
+        this.role = role;
+        this.roleLevel = roleLevel;
+    }
 }

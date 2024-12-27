@@ -79,13 +79,13 @@
         </if>
     </select>
     <insert id="createEmp" parameterType="rise.cc.dto.Employees">
-        <selectKey resultType="String" keyProperty="roleId">
+        <selectKey resultType="String" keyProperty="roleId" order="BEFORE">
             SELECT
-                CODE_ID
+                CODE_NO AS ROLE_ID
             FROM
                 CC_CODE
             WHERE
-                CODE_NAME = #{role}
+                CODE_NAME = 'ROLE_USER'
         </selectKey>
         INSERT INTO
             CC_EMP (
