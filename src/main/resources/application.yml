@@ -58,8 +58,6 @@ logging:
   # logback setting
   pattern:
     file: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
-  file:
-    name: logs/ChuckChuck-Server.log
 #    name: ${catalina.base}/logs/ChuckChuck-Server.log
 
   logback:
