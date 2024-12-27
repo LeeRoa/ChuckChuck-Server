@@ -8,10 +8,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rise.cc.common.EmpResultCode;
 import rise.cc.common.ResultCode;
+import rise.cc.common.Role;
 import rise.cc.dao.EmpDao;
 import rise.cc.dto.Employees;
 import rise.cc.exception.EmpException;
 import rise.cc.util.JsonUtils;
+
+import java.util.List;
 
 @Slf4j
 @Service
@@ -52,18 +55,20 @@ public class EmpServiceImpl implements EmpService {
     @Override
     public String getEmp(Employees emp) {
         try {
-            Employees findEmp = empDao.getEmp(emp);
-            if (findEmp == null) {
+            List<Employees> findEmpList = empDao.getEmp(emp);
+            if (findEmpList == null) {
                 resultMsg = JsonUtils.resultJsonString(EmpResultCode.EMP_NOT_FOUND, EmpResultCode.EMP_NOT_FOUND_MSG);
                 throw new EmpException(EmpResultCode.resultMsg(EmpResultCode.EMP_NOT_FOUND));
             }
             log.info("사원 조회 성공.");
-            resultMsg = JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "empInfo", findEmp);
+            resultMsg = JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "empInfo", findEmpList);
         } catch (NullPointerException e) {
             log.error("사원 조회 요청 에러: {}", ResultCode.resultMsg(ResultCode.NO_REQUIRED_PARAM));
+            e.printStackTrace();
             resultMsg = JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, ResultCode.NO_REQUIRED_PARAM_MSG);
         } catch (DataAccessException e) {
             log.error("사원 조회 DB 에러 로그 확인 필요. {}", e.getMessage());
+            e.printStackTrace();
             resultMsg = JsonUtils.resultJsonString(EmpResultCode.DB_ERROR, EmpResultCode.DB_ERROR_MSG);
         } catch (JsonProcessingException e) {
             log.error("사원 조회 에러: {}", ResultCode.resultMsg(ResultCode.FORMAT_ERROR));
@@ -140,10 +145,10 @@ public class EmpServiceImpl implements EmpService {
         try {
             Employees getRole = empDao.getRole(emp);
 
-            emp.setRole(getRole.getRole());
+            emp.setRole(Role.valueOf(getRole.getRole()));
             emp.setRoleLevel(getRole.getRoleLevel());
         } catch (NullPointerException e) {
-            emp.setRole("ROLE_EMP");
+            emp.setRole(Role.ROLE_EMP);
             emp.setRoleLevel("1");
         }
     }

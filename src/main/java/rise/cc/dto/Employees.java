@@ -3,6 +3,7 @@ package rise.cc.dto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import rise.cc.common.Role;
 
 import java.util.Date;
 
@@ -55,8 +56,17 @@ public class Employees {
     private String role;
     private String roleLevel; // col_seq 컬럼과 같은 데이터
 
-    public void setRole(String role) {
-        this.role = role;
-        this.roleLevel = roleLevel;
+    public void setRole(Role role) {
+        this.role = role.toString();
+        this.roleLevel = getRoleLevelStr(role);
+    }
+
+    public String getRoleLevelStr(Role role) {
+        return switch (role) {
+            case ROLE_CEO -> "3";
+            case ROLE_ADMIN -> "2";
+            case ROLE_EMP -> "1";
+            default -> "0";
+        };
     }
 }

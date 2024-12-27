@@ -30,7 +30,7 @@ public class EmpController {
      * @return 검색된 회원의 데이터 Json 형식
      */
     @GetMapping("")
-    public String findEmp(@RequestBody Employees emp) {
+    public String findEmp(Employees emp) {
         return empService.getEmp(emp);
     }
 

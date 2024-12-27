@@ -4,10 +4,12 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.dao.DataAccessException;
 import rise.cc.dto.Employees;
 
+import java.util.List;
+
 @Mapper
 public interface EmpDao {
     Employees loginProc(Employees emp) throws DataAccessException;
-    Employees getEmp(Employees emp) throws DataAccessException;
+    List<Employees> getEmp(Employees emp) throws DataAccessException;
     Integer getEmpCount(Employees emp) throws DataAccessException;
     Integer createEmp(Employees emp) throws DataAccessException;
     Integer updateEmp(Employees emp) throws DataAccessException;

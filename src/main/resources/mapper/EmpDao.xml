@@ -53,15 +53,20 @@
             CC_EMP.ROLE_ID = CC_CODE.CODE_NO
         WHERE
             1=1
-        AND
-            EMP_RETIRE_DT IS NULL
-        AND
-            EMP_ACCOUNT_STATUS = 'Y'
         <if test="empId != null and !empId.equals('')">
             AND EMP_ID = #{empId}
         </if>
         <if test="empEmail != null and !empEmail.equals('')">
             AND EMP_EMAIL = #{empEmail}
+        </if>
+        <if test="empPhonenum != null and !empPhonenum.equals('')">
+            AND EMP_PHONENUM = #{empPhonenum}
+        </if>
+        <if test="empAccountStatus != null and !empAccountStatus.equals('')">
+            AND EMP_ACCOUNT_STATUS = #{empAccountStatus}
+        </if>
+        <if test="empRetireDt == null or empRetireDt.equals('')">
+            AND EMP_RETIRE_DT IS NULL
         </if>
     </select>
     <select id="getEmpCount" parameterType="Map" resultType="int">
