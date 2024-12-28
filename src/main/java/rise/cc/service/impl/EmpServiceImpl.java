@@ -23,7 +23,7 @@ import java.util.List;
 public class EmpServiceImpl implements EmpService {
 
     private final EmpDao empDao;
-    String resultMsg = JsonUtils.resultJsonString(EmpResultCode.ERROR, EmpResultCode.ERROR_MSG);
+    private String resultMsg = JsonUtils.resultJsonString(EmpResultCode.ERROR, EmpResultCode.ERROR_MSG);
 
     @Transactional
     @Override
@@ -39,6 +39,7 @@ public class EmpServiceImpl implements EmpService {
             }
         } catch (NullPointerException e) {
             log.error("로그인 프로세스 요청 에러: {}", ResultCode.resultMsg(ResultCode.NO_REQUIRED_PARAM));
+            e.printStackTrace();
             resultMsg = JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, ResultCode.NO_REQUIRED_PARAM_MSG);
         } catch (DataAccessException e) {
             log.error("로그인 DB 에러 로그 확인 필요. {}", e.getMessage());

@@ -28,7 +28,7 @@ public class Approval {
     private String docNo;
     private String docType;
     private String empId;
-    private String retentionPeriod;
+    private Date retentionPeriod;
     private String docTitle;
     private String docContent;
     private Date createDt;
@@ -38,4 +38,16 @@ public class Approval {
     private String totalLineCount;
     private String statusLineCount;
     private String spare;
+
+    /* request 용도 */
+    private String approLine;       // 결재 라인
+    private String refEmp;          // 참조자
+    private String notificationEmp; // 통보자
+    private String relateNo;        // 관련문서 번호
+
+    /* dao 용도 */
+    private String[] approLineArr;
+    private String[] refEmpArr;
+    private String[] notificationEmpArr;
+    private String[] relateNoArr;
 }
