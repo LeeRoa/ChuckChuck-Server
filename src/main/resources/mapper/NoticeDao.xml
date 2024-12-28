@@ -16,7 +16,7 @@
                 #{noticeContent},
                 #{commentYn},
                 #{createDt},
-                #{updateDt},
+                NULL,
                 #{notificationYn},
                 'N',
                 0,
@@ -34,7 +34,7 @@
         values (#{originName},
                 #{storedName},
                 #{createDt},
-                #{updateDt},
+                NULL,
                 #{fileSize},
                 #{filePath},
                 #{fileContent})

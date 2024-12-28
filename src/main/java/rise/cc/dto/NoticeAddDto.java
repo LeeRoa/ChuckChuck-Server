@@ -5,6 +5,8 @@ import rise.cc.dto.request.NoticeAddRequest;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class NoticeAddDto {
 
@@ -42,19 +44,21 @@ public class NoticeAddDto {
     public static NoticeAddDto from(NoticeAddRequest request) {
         File file = request.getFileContent();
         String fileContent = "";
-        try (FileReader fr = new FileReader(file))
-        {
+        try (FileReader fr = new FileReader(file)) {
             char[] chars = new char[(int) file.length()];
             fr.read(chars);
 
             fileContent = new String(chars);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String currentDateTime = format.format(date);
+
         return new NoticeAddDto(request.getNoticeTitle(), request.getNoticeContent(),
-                request.getCommentYn(), request.getCreateDt(), request.getUpdateDt(),
+                request.getCommentYn(), currentDateTime, request.getUpdateDt(),
                 request.getNotificationYn(), request.getEmpId(), request.getOriginName(),
                 request.getStoredName(), request.getFilePath(), fileContent);
     }
