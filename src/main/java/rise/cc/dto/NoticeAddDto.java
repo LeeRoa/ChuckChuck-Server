@@ -1,6 +1,6 @@
 package rise.cc.dto;
 
-import rise.cc.controller.request.NoticeAddRequest;
+import rise.cc.dto.request.NoticeAddRequest;
 
 public class NoticeAddDto {
 

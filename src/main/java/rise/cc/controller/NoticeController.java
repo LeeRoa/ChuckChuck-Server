@@ -1,9 +1,7 @@
 package rise.cc.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import rise.cc.controller.request.NoticeAddRequest;
+import org.springframework.web.bind.annotation.*;
+import rise.cc.dto.request.NoticeAddRequest;
 import rise.cc.dto.NoticeAddDto;
 import rise.cc.service.NoticeService;
 

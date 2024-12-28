@@ -8,5 +8,4 @@ public interface NoticeDao {
     int insertNotice(Notice notice);
     int insertFile(Notice notice);
     int insertFileType(int fileType, int docId);
-//    void addNotice(Notice notice);
 }

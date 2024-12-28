@@ -12,15 +12,15 @@
                                DELETE_YN,
                                VIEW_COUNT,
                                EMP_ID)
-        values (#{notice.noticeTitle},
-                #{notice.noticeContent},
-                #{notice.commentYn},
-                #{notice.createDt},
-                #{notice.updateDt},
-                #{notice.notificationYn},
+        values (#{noticeTitle},
+                #{noticeContent},
+                #{commentYn},
+                #{createDt},
+                #{updateDt},
+                #{notificationYn},
                 'N',
                 0,
-                #{notice.empId})
+                #{empId})
     </insert>
 
     <insert id="insertFile" useGeneratedKeys="true" keyProperty="notice.fileNo">
@@ -31,60 +31,17 @@
                               FILE_SIZE,
                               FILE_PATH,
                               FILE_CONTENT)
-        values (#{notice.originName},
-                #{notice.storedName},
-                #{notice.createDt},
-                #{notice.updateDt},
-                #{notice.fileSize},
-                #{notice.filePath},
-                #{notice.fileContent})
+        values (#{originName},
+                #{storedName},
+                #{createDt},
+                #{updateDt},
+                #{fileSize},
+                #{filePath},
+                #{fileContent})
     </insert>
 
     <insert id="insertFileType">
         insert into FILES_TYPE (FILE_NO, TYPE_INFO, DOC_ID)
         values (#{fileNo}, 'B', #{docId})
     </insert>
-
-<!--    <insert id="addNotice" parameterType="rise.cc.dto.Notice">-->
-<!--        insert into CC_NOTICE (NOTICE_TITLE,-->
-<!--                               NOTICE_CONTENT,-->
-<!--                               COMMENT_YN,-->
-<!--                               CREATE_DT,-->
-<!--                               UPDATE_DT,-->
-<!--                               NOTIFICATION_YN,-->
-<!--                               DELETE_YN,-->
-<!--                               VIEW_COUNT,-->
-<!--                               EMP_ID)-->
-<!--        values (#{notice.noticeTitle},-->
-<!--                #{notice.noticeContent},-->
-<!--                #{notice.commentYn},-->
-<!--                #{notice.createDt},-->
-<!--                #{notice.updateDt},-->
-<!--                #{notice.notificationYn},-->
-<!--                'N',-->
-<!--                0,-->
-<!--                #{notice.empId});-->
-
-<!--        insert into CC_FILES (ORIGIN_NAME,-->
-<!--                              STORED_NAME,-->
-<!--                              CREATE_DT,-->
-<!--                              UPDATE_DT,-->
-<!--                              FILE_SIZE,-->
-<!--                              FILE_PATH,-->
-<!--                              FILE_CONTENT)-->
-<!--        values (#{notice.originName},-->
-<!--                #{notice.storedName},-->
-<!--                #{notice.createDt},-->
-<!--                #{notice.updateDt},-->
-<!--                #{notice.fileSize},-->
-<!--                #{notice.filePath},-->
-<!--                #{notice.fileContent});-->
-
-<!--        insert into FILES_TYPE (FILE_NO,-->
-<!--                                TYPE_INFO,-->
-<!--                                DOC_ID)-->
-<!--        values (0,-->
-<!--                'B',-->
-<!--                0);-->
-<!--    </insert>-->
 </mapper>

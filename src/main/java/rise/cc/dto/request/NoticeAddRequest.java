@@ -1,4 +1,6 @@
-package rise.cc.controller.request;
+package rise.cc.dto.request;
+
+import java.io.File;
 
 public class NoticeAddRequest {
     /*
