@@ -2,6 +2,10 @@ package rise.cc.dto;
 
 import rise.cc.dto.request.NoticeAddRequest;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 public class NoticeAddDto {
 
     private String noticeTitle;
@@ -36,10 +40,23 @@ public class NoticeAddDto {
     }
 
     public static NoticeAddDto from(NoticeAddRequest request) {
+        File file = request.getFileContent();
+        String fileContent = "";
+        try (FileReader fr = new FileReader(file))
+        {
+            char[] chars = new char[(int) file.length()];
+            fr.read(chars);
+
+            fileContent = new String(chars);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+
         return new NoticeAddDto(request.getNoticeTitle(), request.getNoticeContent(),
                 request.getCommentYn(), request.getCreateDt(), request.getUpdateDt(),
                 request.getNotificationYn(), request.getEmpId(), request.getOriginName(),
-                request.getStoredName(), request.getFilePath(), request.getFileContent());
+                request.getStoredName(), request.getFilePath(), fileContent);
     }
 
     public String getNoticeTitle() {

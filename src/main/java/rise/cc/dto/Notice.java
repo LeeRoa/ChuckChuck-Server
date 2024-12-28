@@ -11,13 +11,14 @@ public class Notice {
     private String empId;
     private String originName;
     private String storedName;
+    private int fileSize;
     private String filePath;
     private String fileContent;
 
     public Notice(String noticeTitle, String noticeContent, String commentYn,
                   String createDt, String updateDt, String notificationYn,
                   String empId, String originName, String storedName,
-                  String filePath, String fileContent) {
+                  int fileSize, String filePath, String fileContent) {
         this.noticeTitle = noticeTitle;
         this.noticeContent = noticeContent;
         this.commentYn = commentYn;
@@ -27,6 +28,7 @@ public class Notice {
         this.empId = empId;
         this.originName = originName;
         this.storedName = storedName;
+        this.fileSize = fileSize;
         this.filePath = filePath;
         this.fileContent = fileContent;
     }
@@ -36,7 +38,7 @@ public class Notice {
                 dto.getNoticeTitle(), dto.getNoticeContent(),
                 dto.getCommentYn(), dto.getCreateDt(), dto.getUpdateDt(),
                 dto.getNotificationYn(), dto.getEmpId(), dto.getOriginName(),
-                dto.getStoredName(), dto.getFilePath(), dto.getFileContent()
+                dto.getStoredName(), dto.getFileSize(), dto.getFilePath(), dto.getFileContent()
         );
     }
 
@@ -74,6 +76,10 @@ public class Notice {
 
     public String getStoredName() {
         return storedName;
+    }
+
+    public int getFileSize() {
+        return fileSize;
     }
 
     public String getFilePath() {

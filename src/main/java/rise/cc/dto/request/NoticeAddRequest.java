@@ -28,12 +28,12 @@ public class NoticeAddRequest {
     private String originName;
     private String storedName;
     private String filePath;
-    private String fileContent;
+    private File fileContent;
 
     public NoticeAddRequest(String noticeTitle, String noticeContent, String commentYn,
                   String createDt, String updateDt, String notificationYn,
                   String empId, String originName, String storedName,
-                  String filePath, String fileContent) {
+                  String filePath, File fileContent) {
         this.noticeTitle = noticeTitle;
         this.noticeContent = noticeContent;
         this.commentYn = commentYn;
@@ -44,7 +44,7 @@ public class NoticeAddRequest {
         this.originName = originName == null ? "" : originName;
         this.storedName = storedName == null ? "" : storedName;
         this.filePath = filePath == null ? "" : filePath;
-        this.fileContent = fileContent == null ? "" : fileContent;
+        this.fileContent = fileContent == null ? new File("") : fileContent;
     }
 
     public String getNoticeTitle() {
@@ -87,7 +87,7 @@ public class NoticeAddRequest {
         return filePath;
     }
 
-    public String getFileContent() {
+    public File getFileContent() {
         return fileContent;
     }
 }
