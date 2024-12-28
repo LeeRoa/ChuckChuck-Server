@@ -56,7 +56,7 @@ public class Employees {
     private String role;
     private String roleLevel; // col_seq 컬럼과 같은 데이터
 
-    public void setRole(Role role) {
+    public void setRoleInfo(Role role) {
         this.role = role.toString();
         this.roleLevel = getRoleLevelStr(role);
     }

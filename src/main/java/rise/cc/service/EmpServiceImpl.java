@@ -144,12 +144,9 @@ public class EmpServiceImpl implements EmpService {
     public void setRole(Employees emp) {
         try {
             Employees getRole = empDao.getRole(emp);
-
-            emp.setRole(Role.valueOf(getRole.getRole()));
-            emp.setRoleLevel(getRole.getRoleLevel());
+            emp.setRoleInfo(Role.valueOf(getRole.getRole()));
         } catch (NullPointerException e) {
-            emp.setRole(Role.ROLE_EMP);
-            emp.setRoleLevel("1");
+            emp.setRoleInfo(Role.ROLE_EMP);
         }
     }
 }
