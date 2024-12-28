@@ -1,5 +1,6 @@
 package rise.cc.dto;
 
+import lombok.Getter;
 import rise.cc.dto.request.NoticeAddRequest;
 
 import java.io.File;
@@ -8,6 +9,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+@Getter
 public class NoticeAddDto {
 
     private String noticeTitle;
@@ -61,53 +63,5 @@ public class NoticeAddDto {
                 request.getCommentYn(), currentDateTime, request.getUpdateDt(),
                 request.getNotificationYn(), request.getEmpId(), request.getOriginName(),
                 request.getStoredName(), request.getFilePath(), fileContent);
-    }
-
-    public String getNoticeTitle() {
-        return noticeTitle;
-    }
-
-    public String getNoticeContent() {
-        return noticeContent;
-    }
-
-    public String getCommentYn() {
-        return commentYn;
-    }
-
-    public String getCreateDt() {
-        return createDt;
-    }
-
-    public String getUpdateDt() {
-        return updateDt;
-    }
-
-    public String getNotificationYn() {
-        return notificationYn;
-    }
-
-    public String getEmpId() {
-        return empId;
-    }
-
-    public String getOriginName() {
-        return originName;
-    }
-
-    public String getStoredName() {
-        return storedName;
-    }
-
-    public int getFileSize() {
-        return fileSize;
-    }
-
-    public String getFilePath() {
-        return filePath;
-    }
-
-    public String getFileContent() {
-        return fileContent;
     }
 }

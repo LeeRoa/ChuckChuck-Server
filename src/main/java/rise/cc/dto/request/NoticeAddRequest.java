@@ -1,7 +1,10 @@
 package rise.cc.dto.request;
 
+import lombok.Getter;
+
 import java.io.File;
 
+@Getter
 public class NoticeAddRequest {
     /*
       "noticeTitle": "공지사항 제목",
@@ -45,49 +48,5 @@ public class NoticeAddRequest {
         this.storedName = storedName == null ? "" : storedName;
         this.filePath = filePath == null ? "" : filePath;
         this.fileContent = fileContent == null ? new File("") : fileContent;
-    }
-
-    public String getNoticeTitle() {
-        return noticeTitle;
-    }
-
-    public String getNoticeContent() {
-        return noticeContent;
-    }
-
-    public String getCommentYn() {
-        return commentYn;
-    }
-
-    public String getCreateDt() {
-        return createDt;
-    }
-
-    public String getUpdateDt() {
-        return updateDt;
-    }
-
-    public String getNotificationYn() {
-        return notificationYn;
-    }
-
-    public String getEmpId() {
-        return empId;
-    }
-
-    public String getOriginName() {
-        return originName;
-    }
-
-    public String getStoredName() {
-        return storedName;
-    }
-
-    public String getFilePath() {
-        return filePath;
-    }
-
-    public File getFileContent() {
-        return fileContent;
     }
 }
