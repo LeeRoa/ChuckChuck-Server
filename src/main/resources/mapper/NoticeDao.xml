@@ -2,7 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="rise.cc.dao.NoticeDao">
-    <insert id="insertNotice" useGeneratedKeys="true" keyProperty="notice.docId">
+    <insert id="insertNotice" useGeneratedKeys="true" keyProperty="noticeNo"
+            parameterType="rise.cc.dto.Notice">
         insert into CC_NOTICE (NOTICE_TITLE,
                                NOTICE_CONTENT,
                                COMMENT_YN,
@@ -23,7 +24,8 @@
                 #{empId})
     </insert>
 
-    <insert id="insertFile" useGeneratedKeys="true" keyProperty="notice.fileNo">
+    <insert id="insertFile" useGeneratedKeys="true" keyProperty="fileNo"
+            parameterType="rise.cc.dto.File">
         insert into CC_FILES (ORIGIN_NAME,
                               STORED_NAME,
                               CREATE_DT,
@@ -40,7 +42,8 @@
                 #{fileContent})
     </insert>
 
-    <insert id="insertFileType">
+    <insert id="insertFileType" useGeneratedKeys="true" keyProperty="typeId"
+            parameterType="rise.cc.dto.FilesType">
         insert into FILES_TYPE (FILE_NO, TYPE_INFO, DOC_ID)
         values (#{fileNo}, 'B', #{docId})
     </insert>

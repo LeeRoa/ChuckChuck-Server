@@ -1,7 +1,11 @@
 package rise.cc.dto;
 
+import lombok.Getter;
+
+@Getter
 public class Notice {
 
+    private int noticeNo;
     private String noticeTitle;
     private String noticeContent;
     private String commentYn;
@@ -42,51 +46,7 @@ public class Notice {
         );
     }
 
-    public String getNoticeTitle() {
-        return noticeTitle;
-    }
-
-    public String getNoticeContent() {
-        return noticeContent;
-    }
-
-    public String getCommentYn() {
-        return commentYn;
-    }
-
-    public String getCreateDt() {
-        return createDt;
-    }
-
-    public String getUpdateDt() {
-        return updateDt;
-    }
-
-    public String getNotificationYn() {
-        return notificationYn;
-    }
-
-    public String getEmpId() {
-        return empId;
-    }
-
-    public String getOriginName() {
-        return originName;
-    }
-
-    public String getStoredName() {
-        return storedName;
-    }
-
-    public int getFileSize() {
-        return fileSize;
-    }
-
-    public String getFilePath() {
-        return filePath;
-    }
-
-    public String getFileContent() {
-        return fileContent;
+    public void setNoticeNo(int noticeNo) {
+        this.noticeNo = noticeNo;
     }
 }
