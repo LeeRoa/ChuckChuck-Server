@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="rise.cc.dao.ApprovalDao">
+    <insert id="createApproval" parameterType="rise.cc.dto.Approval">
+
+    </insert>
+    <update id="updateApproval" parameterType="rise.cc.dto.Approval">
+
+    </update>
+    <update id="deleteApproval" parameterType="rise.cc.dto.Approval">
+
+    </update>
+    <select id="getApproval" parameterType="rise.cc.dto.Approval">
+
+    </select>
+</mapper>

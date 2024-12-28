@@ -1,4 +1,4 @@
-package rise.cc.service;
+package rise.cc.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
@@ -11,7 +11,8 @@ import rise.cc.common.ResultCode;
 import rise.cc.common.Role;
 import rise.cc.dao.EmpDao;
 import rise.cc.dto.Employees;
-import rise.cc.exception.EmpException;
+import rise.cc.exception.CCException;
+import rise.cc.service.EmpService;
 import rise.cc.util.JsonUtils;
 
 import java.util.List;
@@ -58,7 +59,7 @@ public class EmpServiceImpl implements EmpService {
             List<Employees> findEmpList = empDao.getEmp(emp);
             if (findEmpList == null) {
                 resultMsg = JsonUtils.resultJsonString(EmpResultCode.EMP_NOT_FOUND, EmpResultCode.EMP_NOT_FOUND_MSG);
-                throw new EmpException(EmpResultCode.resultMsg(EmpResultCode.EMP_NOT_FOUND));
+                throw new CCException(EmpResultCode.resultMsg(EmpResultCode.EMP_NOT_FOUND));
             }
             log.info("사원 조회 성공.");
             resultMsg = JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "empInfo", findEmpList);
@@ -73,7 +74,7 @@ public class EmpServiceImpl implements EmpService {
         } catch (JsonProcessingException e) {
             log.error("사원 조회 에러: {}", ResultCode.resultMsg(ResultCode.FORMAT_ERROR));
             resultMsg = JsonUtils.resultJsonString(ResultCode.FORMAT_ERROR, ResultCode.FORMAT_ERROR_MSG);
-        } catch (EmpException e) {
+        } catch (CCException e) {
             log.error("사원 조회 에러: {}", e.getMessage());
         } catch (Exception e) {
             log.error("사원 조회 에러: {}", e.getMessage());
