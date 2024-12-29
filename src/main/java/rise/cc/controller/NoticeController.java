@@ -16,7 +16,7 @@ public class NoticeController {
     }
 
     @PostMapping
-    public void postNotice(NoticeAddRequest request) {
+    public void postNotice(@RequestBody NoticeAddRequest request) {
         service.addNotice(NoticeAddDto.from(request));
     }
 }
