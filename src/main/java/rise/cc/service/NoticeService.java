@@ -24,6 +24,10 @@ public class NoticeService {
             int noticeNo = notice.getNoticeNo();
 
             File file = File.from(dto);
+            if (file.isEmptyFile()) {
+                return;
+            }
+
             dao.insertFile(file);
             int fileNo = file.getFileNo();
 

@@ -44,4 +44,8 @@ public class File {
     public void setFileNo(int fileNo) {
         this.fileNo = fileNo;
     }
+
+    public boolean isEmptyFile() {
+        return fileSize == 0;
+    }
 }
