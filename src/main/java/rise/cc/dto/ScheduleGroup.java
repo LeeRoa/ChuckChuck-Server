@@ -25,6 +25,6 @@ public class ScheduleGroup {
     private String scheduleGroupDescription;
     private Date scheduleGroupCreateDt;
     private Date scheduleGroupUpdateDt;
-    private int empId;
+    private Integer empId;
     private String spare;
 }

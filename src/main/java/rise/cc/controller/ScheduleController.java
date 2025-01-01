@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import rise.cc.dto.Schedule;
 import rise.cc.dto.ScheduleGroup;
 import rise.cc.service.ScheduleService;
 
@@ -21,6 +22,12 @@ public class ScheduleController {
     public String createGroup(@RequestBody ScheduleGroup scheduleGroup) {
 
         return scheduleService.createScheduleGroup(scheduleGroup);
+    }
+
+    @PostMapping("/create")
+    public String createSchedule(@RequestBody Schedule schedule) {
+
+        return scheduleService.createSchedule(schedule);
     }
 
 }
