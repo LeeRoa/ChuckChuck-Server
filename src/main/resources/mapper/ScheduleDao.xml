@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="rise.cc.dao.ScheduleDao">
+    <insert id="createScheduleGroup" parameterType="rise.cc.dto.ScheduleGroup">
+        INSERT INTO SCHEDULE_GROUP (
+            SCHEDULE_GROUP_NAME,
+            SCHEDULE_GROUP_DESCRIPTION,
+            EMP_ID
+        )
+        VALUES (
+            #{scheduleGroupName},
+            #{scheduleGroupDescription},
+            #{empId}
+        )
+    </insert>
+
+    <insert id="createSchedule" parameterType="rise.cc.dto.Schedule">
+        INSERT INTO CC_SCHEDULE (
+            SCHEDULE_NAME,
+            SCHEDULE_CONTENT,
+            SCHEDULE_START_DT,
+            SCHEDULE_END_DT,
+            SCHEDULE_PLACE,
+            ALLDAY_WHETHER,
+            SCHEDULE_GROUP_ID
+        )
+        VALUES (
+           #{scheduleName},
+           #{scheduleContent},
+           #{scheduleStartDt},
+           #{scheduleEndDt},
+           #{schedulePlace},
+            <if test="alldayWhether != null">
+                #{alldayWhether},
+            </if>
+            <if test="alldayWhether == null">
+                'N',
+            </if>
+           #{scheduleGroupId}
+       )
+    </insert>
+
+
+
+</mapper>
