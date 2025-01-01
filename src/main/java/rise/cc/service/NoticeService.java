@@ -1,6 +1,5 @@
 package rise.cc.service;
 
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rise.cc.dao.NoticeDao;
