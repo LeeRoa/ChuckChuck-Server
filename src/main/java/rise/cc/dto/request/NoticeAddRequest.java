@@ -10,8 +10,6 @@ public class NoticeAddRequest {
       "noticeTitle": "공지사항 제목",
       "noticeContent": "공지사항 상세 내용",
       "commentYn": "Y",
-      "createDt": "",
-      "updateDt": "",
       "notificationYn": "Y",
       "empId": "1",
 
@@ -24,8 +22,6 @@ public class NoticeAddRequest {
     private String noticeTitle;
     private String noticeContent;
     private String commentYn;
-    private String createDt;
-    private String updateDt;
     private String notificationYn;
     private String empId;
     private String originName;
@@ -34,14 +30,11 @@ public class NoticeAddRequest {
     private File fileContent;
 
     public NoticeAddRequest(String noticeTitle, String noticeContent, String commentYn,
-                  String createDt, String updateDt, String notificationYn,
-                  String empId, String originName, String storedName,
+                  String notificationYn, String empId, String originName, String storedName,
                   String filePath, File fileContent) {
         this.noticeTitle = noticeTitle;
         this.noticeContent = noticeContent;
         this.commentYn = commentYn;
-        this.createDt = createDt;
-        this.updateDt = updateDt;
         this.notificationYn = notificationYn;
         this.empId = empId;
         this.originName = originName == null ? "" : originName;

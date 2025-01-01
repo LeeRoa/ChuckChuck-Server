@@ -2,6 +2,9 @@ package rise.cc.dto;
 
 import lombok.Getter;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 @Getter
 public class File {
     private int fileNo;
@@ -30,11 +33,15 @@ public class File {
     }
 
     public static File from(NoticeAddDto dto) {
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String currentDateTime = format.format(date);
+
         return new File(
                 dto.getOriginName(),
                 dto.getStoredName(),
-                dto.getCreateDt(),
-                dto.getUpdateDt(),
+                currentDateTime,
+                "",
                 dto.getFileSize(),
                 dto.getFilePath(),
                 dto.getFileContent()
@@ -43,5 +50,9 @@ public class File {
 
     public void setFileNo(int fileNo) {
         this.fileNo = fileNo;
+    }
+
+    public boolean isEmptyFile() {
+        return fileSize == 0;
     }
 }

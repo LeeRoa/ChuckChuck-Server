@@ -2,6 +2,9 @@ package rise.cc.dto;
 
 import lombok.Getter;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 @Getter
 public class Notice {
 
@@ -38,9 +41,13 @@ public class Notice {
     }
 
     public static Notice from(NoticeAddDto dto) {
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String currentDateTime = format.format(date);
+
         return new Notice(
                 dto.getNoticeTitle(), dto.getNoticeContent(),
-                dto.getCommentYn(), dto.getCreateDt(), dto.getUpdateDt(),
+                dto.getCommentYn(), currentDateTime, "",
                 dto.getNotificationYn(), dto.getEmpId(), dto.getOriginName(),
                 dto.getStoredName(), dto.getFileSize(), dto.getFilePath(), dto.getFileContent()
         );
