@@ -2,13 +2,18 @@ package rise.cc.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import rise.cc.common.ResultCode;
 import rise.cc.dao.ScheduleDao;
 import rise.cc.dto.Schedule;
 import rise.cc.dto.ScheduleGroup;
 import rise.cc.util.JsonUtils;
+
+import java.util.List;
+import java.util.Objects;
 
 @Slf4j
 @Service
@@ -19,63 +24,44 @@ public class ScheduleServiceImpl implements ScheduleService {
 
     @Override
     public String createScheduleGroup(ScheduleGroup scheduleGroup) {
-        validateScheduleGroup(scheduleGroup);
-
-        try {
-            return processDatabaseOperation(
-                    scheduleDao.createScheduleGroup(scheduleGroup),
-                    "일정 그룹 생성 성공",
-                    "일정 그룹 생성 실패"
-            );
-        } catch (DataAccessException e) {
-            log.error("DB 에러 발생: {}", e.getMessage());
-            throw e;
-        } catch (Exception e) {
-            log.error("일정 그룹 생성 중 알 수 없는 오류 발생: {}", e.getMessage());
-            throw e;
-        }
+        validate(scheduleGroup, "scheduleGroupName", "empId");
+        int result = scheduleDao.createScheduleGroup(scheduleGroup);
+        return processDatabaseOperation(result, "일정 그룹 생성 성공", "일정 그룹 생성 실패");
     }
 
     @Override
     public String createSchedule(Schedule schedule) {
-        validateSchedule(schedule);
-
-        try {
-            return processDatabaseOperation(
-                    scheduleDao.createSchedule(schedule),
-                    "일정 생성 성공",
-                    "일정 생성 실패"
-            );
-        } catch (DataAccessException e) {
-            log.error("DB 에러 발생: {}", e.getMessage());
-            throw e;
-        } catch (Exception e) {
-            log.error("일정 생성 중 알 수 없는 오류 발생: {}", e.getMessage());
-            throw e;
-        }
+        validate(schedule, "scheduleName", "scheduleStartDt", "scheduleEndDt", "scheduleGroupId");
+        int result = scheduleDao.createSchedule(schedule);
+        return processDatabaseOperation(result, "일정 생성 성공", "일정 생성 실패");
     }
 
-    private void validateScheduleGroup(ScheduleGroup scheduleGroup) {
-        if (scheduleGroup.getScheduleGroupName() == null) {
-            throw new IllegalArgumentException("Schedule group name is null.");
+    @Transactional
+    @Override
+    public String inviteGroupMembers(List<ScheduleGroup> scheduleGroupsList) {
+        for (ScheduleGroup scheduleGroup : scheduleGroupsList) {
+            validate(scheduleGroup, "scheduleGroupId", "empId");
+            int result = scheduleDao.inviteGroupMembers(scheduleGroup);
+            if (result <= 0) {
+                log.error("구성원 초대 실패: {}", scheduleGroup);
+                throw new IllegalArgumentException("구성원 초대 실패: " + scheduleGroup);
+            }
         }
-        if (scheduleGroup.getEmpId() == null) {
-            throw new IllegalArgumentException("Schedule group empId is null.");
-        }
+        log.info("모든 구성원 초대 성공");
+        return JsonUtils.resultJsonString(ResultCode.SUCCESS, ResultCode.SUCCESS_MSG);
     }
 
-    private void validateSchedule(Schedule schedule) {
-        if (schedule.getScheduleName() == null) {
-            throw new IllegalArgumentException("Schedule name is null.");
-        }
-        if (schedule.getScheduleStartDt() == null) {
-            throw new IllegalArgumentException("Schedule start dt is null.");
-        }
-        if (schedule.getScheduleEndDt() == null) {
-            throw new IllegalArgumentException("Schedule end dt is null.");
-        }
-        if (schedule.getScheduleGroupId() == null) {
-            throw new IllegalArgumentException("Schedule group id is null.");
+
+    private void validate(Object entity, String... requiredFields) {
+        for (String field : requiredFields) {
+            try {
+                Object value = Objects.requireNonNull(BeanUtils.getPropertyDescriptor(entity.getClass(), field)).getReadMethod().invoke(entity);
+                if (value == null) {
+                    throw new IllegalArgumentException(field + " 필드가 유효하지 않습니다.");
+                }
+            } catch (Exception e) {
+                throw new IllegalArgumentException(" 필수 값 오류: " + field);
+            }
         }
     }
 

@@ -41,6 +41,18 @@
        )
     </insert>
 
+    <insert id="inviteGroupMembers" parameterType="rise.cc.dto.ScheduleGroup">
+        INSERT INTO SCHEDULE_GROUP_MEMBER (
+            SCHEDULE_GROUP_ID,
+            EMP_ID
+        )
+        VALUES (
+            #{scheduleGroupId},
+            #{empId}
+        )
+    </insert>
+
+
 
 
 </mapper>

@@ -10,6 +10,8 @@ import rise.cc.dto.Schedule;
 import rise.cc.dto.ScheduleGroup;
 import rise.cc.service.ScheduleService;
 
+import java.util.List;
+
 @Slf4j
 @RestController
 @RequestMapping("/schedule")
@@ -28,6 +30,11 @@ public class ScheduleController {
     public String createSchedule(@RequestBody Schedule schedule) {
 
         return scheduleService.createSchedule(schedule);
+    }
+
+    @PostMapping("/invite-member")
+    public String inviteMember(@RequestBody List<ScheduleGroup> scheduleGroupList) {
+        return scheduleService.inviteGroupMembers(scheduleGroupList);
     }
 
 }
