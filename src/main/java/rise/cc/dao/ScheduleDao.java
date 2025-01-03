@@ -9,4 +9,5 @@ import rise.cc.dto.ScheduleGroup;
 public interface ScheduleDao {
     Integer createScheduleGroup(ScheduleGroup scheduleGroup) throws DataAccessException;
     Integer createSchedule(Schedule schedule) throws DataAccessException;
+    Integer inviteGroupMembers(ScheduleGroup scheduleGroup) throws DataAccessException;
 }

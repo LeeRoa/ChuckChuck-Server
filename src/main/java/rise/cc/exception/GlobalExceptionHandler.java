@@ -17,19 +17,19 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentException e) {
         log.error("IllegalArgumentException 발생: {}", e.getMessage());
         return ResponseEntity.badRequest()
-                .body(JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, e.getMessage()));
+                .body(JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, e.getMessage() + "(필수값 누락)"));
     }
 
     @ExceptionHandler(DataAccessException.class)
     public ResponseEntity<String> handleDataAccessException(DataAccessException e) {
         String errorMessage = "DB 에러 발생";
 
-        if (errorMessage.contains("duplicate key")) {
-            errorMessage = "이미 존재하는 데이터입니다. 중복된 값이 없는지 확인해 주세요.";
-        } else if (errorMessage.contains("cannot be null")) {
-            errorMessage = "필수값이 누락되었습니다. 필요한 값이 제공되었는지 확인해 주세요.";
-        } else if (errorMessage.contains("constraint violation")) {
-            errorMessage = "데이터베이스 제약 조건 위반이 발생했습니다. 요청을 다시 확인해 주세요.";
+        if (e.getMessage().contains("Duplicate")) {
+            errorMessage = "DB 에러: 중복된 값이 없는지 확인해 주세요.";
+        } else if (e.getMessage().contains("constraint violation")) {
+            errorMessage = "DB 에러: 데이터베이스 제약 조건 위반이 발생했습니다. 요청을 다시 확인해 주세요.";
+        } else if (e.getMessage().contains("foreign key constraint")) {
+            errorMessage = "DB 에러: 외래 키 제약 조건 위반 요청을 다시 확인해 주세요.";
         }
 
         log.error("DB 에러 발생: {}", errorMessage);

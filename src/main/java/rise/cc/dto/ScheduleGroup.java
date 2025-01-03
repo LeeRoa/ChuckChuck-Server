@@ -20,11 +20,13 @@ public class ScheduleGroup {
         spare
      */
 
-    private int scheduleGroupId;
+    private Integer scheduleGroupMembers;
+    private Integer scheduleGroupId;
     private String scheduleGroupName;
     private String scheduleGroupDescription;
     private Date scheduleGroupCreateDt;
     private Date scheduleGroupUpdateDt;
     private Integer empId;
+
     private String spare;
 }
