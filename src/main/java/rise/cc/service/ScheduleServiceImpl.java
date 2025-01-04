@@ -3,7 +3,6 @@ package rise.cc.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
-import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rise.cc.common.ResultCode;
@@ -26,14 +25,14 @@ public class ScheduleServiceImpl implements ScheduleService {
     public String createScheduleGroup(ScheduleGroup scheduleGroup) {
         validate(scheduleGroup, "scheduleGroupName", "empId");
         int result = scheduleDao.createScheduleGroup(scheduleGroup);
-        return processDatabaseOperation(result, "일정 그룹 생성 성공", "일정 그룹 생성 실패");
+        return processSingleOperation(result, "일정 그룹 생성 성공", "일정 그룹 생성 실패");
     }
 
     @Override
     public String createSchedule(Schedule schedule) {
         validate(schedule, "scheduleName", "scheduleStartDt", "scheduleEndDt", "scheduleGroupId");
         int result = scheduleDao.createSchedule(schedule);
-        return processDatabaseOperation(result, "일정 생성 성공", "일정 생성 실패");
+        return processSingleOperation(result, "일정 생성 성공", "일정 생성 실패");
     }
 
     @Transactional
@@ -41,14 +40,12 @@ public class ScheduleServiceImpl implements ScheduleService {
     public String inviteGroupMembers(List<ScheduleGroup> scheduleGroupsList) {
         for (ScheduleGroup scheduleGroup : scheduleGroupsList) {
             validate(scheduleGroup, "scheduleGroupId", "empId");
-            int result = scheduleDao.inviteGroupMembers(scheduleGroup);
-            if (result <= 0) {
-                log.error("구성원 초대 실패: {}", scheduleGroup);
-                throw new IllegalArgumentException("구성원 초대 실패: " + scheduleGroup);
-            }
         }
-        log.info("모든 구성원 초대 성공");
-        return JsonUtils.resultJsonString(ResultCode.SUCCESS, ResultCode.SUCCESS_MSG);
+
+        int result = scheduleDao.inviteGroupMembers(scheduleGroupsList);
+
+        return processBatchOperation(result, scheduleGroupsList, "구성원 초대 성공", "구성원 초대 실패");
+
     }
 
 
@@ -65,7 +62,7 @@ public class ScheduleServiceImpl implements ScheduleService {
         }
     }
 
-    private String processDatabaseOperation(int result, String successMessage, String errorMessage) {
+    private String processSingleOperation(int result, String successMessage, String errorMessage) {
         if (result > 0) {
             log.info(successMessage);
             return JsonUtils.resultJsonString(ResultCode.SUCCESS, ResultCode.SUCCESS_MSG);
@@ -74,5 +71,17 @@ public class ScheduleServiceImpl implements ScheduleService {
             return JsonUtils.resultJsonString(ResultCode.ERROR, errorMessage);
         }
     }
+
+    private String processBatchOperation(int result, List<?> list, String successMessage, String errorMessage) {
+        if (result == list.size()) {
+            log.info(successMessage);
+            return JsonUtils.resultJsonString(ResultCode.SUCCESS, ResultCode.SUCCESS_MSG);
+        } else {
+            log.error(errorMessage);
+            return JsonUtils.resultJsonString(ResultCode.ERROR, errorMessage);
+        }
+    }
+
+
 }
 
