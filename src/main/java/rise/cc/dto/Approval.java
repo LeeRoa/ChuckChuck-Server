@@ -2,14 +2,18 @@ package rise.cc.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import rise.cc.common.SearchCriteria;
 
 import java.util.Date;
+import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-public class Approval {
+public class Approval extends SearchCriteria {
     /*
         문서번호	            doc_no
         문서 타입 번호	    doc_type
@@ -46,8 +50,8 @@ public class Approval {
     private String relateNo;        // 관련문서 번호
 
     /* dao 용도 */
-    private String[] approLineArr;
-    private String[] refEmpArr;
-    private String[] notificationEmpArr;
-    private String[] relateNoArr;
+    private List<ApprovalLiner> approLineList;
+    private List<ApprovalLiner> refEmpList;
+    private List<ApprovalLiner> notificationEmpList;
+    private List<Approval> relateNoList;
 }

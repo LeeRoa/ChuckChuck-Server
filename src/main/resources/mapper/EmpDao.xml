@@ -68,6 +68,17 @@
         <if test="empRetireDt == null or empRetireDt.equals('')">
             AND EMP_RETIRE_DT IS NULL
         </if>
+        <if test="sort != null and !sort.equals('')">
+            ORDER BY CC_EMP.EMP_ID
+            <choose>
+                <when test="sort == 'asc' || sort == 'ASC'">ASC</when>
+                <otherwise>DESC</otherwise>
+            </choose>
+        </if>
+        LIMIT
+            #{viewCount}
+        OFFSET
+            #{startIndex}
     </select>
     <select id="getEmpCount" parameterType="Map" resultType="int">
         SELECT

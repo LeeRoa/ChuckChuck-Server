@@ -73,6 +73,7 @@ public class EmpServiceImpl implements EmpService {
             e.printStackTrace();
             resultMsg = JsonUtils.resultJsonString(EmpResultCode.DB_ERROR, EmpResultCode.DB_ERROR_MSG);
         } catch (JsonProcessingException e) {
+            e.printStackTrace();
             log.error("사원 조회 에러: {}", ResultCode.resultMsg(ResultCode.FORMAT_ERROR));
             resultMsg = JsonUtils.resultJsonString(ResultCode.FORMAT_ERROR, ResultCode.FORMAT_ERROR_MSG);
         } catch (CCException e) {

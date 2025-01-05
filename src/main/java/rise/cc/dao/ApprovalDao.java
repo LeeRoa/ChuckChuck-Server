@@ -11,4 +11,5 @@ public interface ApprovalDao {
     int updateApproval(Approval approval);
     int deleteApproval(Approval approval);
     List<Approval> getApproval(Approval approval);
+    int createApprovalLine(Approval approval);
 }

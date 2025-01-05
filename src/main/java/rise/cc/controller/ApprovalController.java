@@ -7,7 +7,7 @@ import rise.cc.service.ApprovalService;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/appro")
+@RequestMapping("/approval")
 public class ApprovalController {
 
     private final ApprovalService approvalService;
