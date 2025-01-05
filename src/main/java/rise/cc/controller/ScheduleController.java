@@ -1,0 +1,45 @@
+package rise.cc.controller;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.*;
+import rise.cc.dto.Schedule;
+import rise.cc.dto.ScheduleGroup;
+import rise.cc.service.ScheduleService;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Slf4j
+@RestController
+@RequestMapping("/schedule")
+@RequiredArgsConstructor
+public class ScheduleController {
+
+    private final ScheduleService scheduleService;
+
+    @PostMapping("/group-create")
+    public String createGroup(@RequestBody ScheduleGroup scheduleGroup) {
+
+        return scheduleService.createScheduleGroup(scheduleGroup);
+    }
+
+    @PostMapping("/create")
+    public String createSchedule(@RequestBody Schedule schedule) {
+
+        return scheduleService.createSchedule(schedule);
+    }
+
+    @PostMapping("/invite-member")
+    public String inviteMember(@RequestBody List<ScheduleGroup> scheduleGroupList) {
+        return scheduleService.inviteGroupMembers(scheduleGroupList);
+    }
+
+    @GetMapping("")
+    public String selectSchedule(@RequestBody List<Schedule> scheduleList) throws JsonProcessingException {
+        return scheduleService.selectSchedule(scheduleList);
+    }
+
+}
