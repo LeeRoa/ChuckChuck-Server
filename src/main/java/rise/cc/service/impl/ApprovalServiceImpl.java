@@ -24,11 +24,14 @@ public class ApprovalServiceImpl implements ApprovalService {
     @Override
     public String createApproval(Approval approval) {
         try {
+            if (approval.getEmpId() == null) {
+                throw new NullPointerException();
+            }
+
             setApprovalTotalLine(approval);
             if (approval.getRelateNo() != null) {
                 approval.setRelateNoArr(approval.getRelateNo().trim().split(","));
             }
-
 
             if (approvalDao.createApproval(approval) > 0) {
                 log.info("전자결재 문서 등록 성공.");
