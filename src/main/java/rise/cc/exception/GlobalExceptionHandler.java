@@ -1,5 +1,6 @@
 package rise.cc.exception;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
@@ -37,11 +38,17 @@ public class GlobalExceptionHandler {
                 .body(JsonUtils.resultJsonString(ResultCode.DB_ERROR, errorMessage));
     }
 
-
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleException(Exception e) {
         log.error("알 수 없는 에러 발생: {}", e.getMessage());
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(JsonUtils.resultJsonString(ResultCode.ERROR, "예상치 못한 오류가 발생했습니다."));
+    }
+
+    @ExceptionHandler(JsonProcessingException.class)
+    public ResponseEntity<String> handleJsonProcessingException(JsonProcessingException e) {
+        log.error("JsonProcessingException 발생: {}", e.getMessage());
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(JsonUtils.resultJsonString(ResultCode.ERROR, "JsonProcessingException"));
     }
 }

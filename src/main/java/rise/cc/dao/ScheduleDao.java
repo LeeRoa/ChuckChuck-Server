@@ -12,4 +12,6 @@ public interface ScheduleDao {
     Integer createScheduleGroup(ScheduleGroup scheduleGroup) throws DataAccessException;
     Integer createSchedule(Schedule schedule) throws DataAccessException;
     Integer inviteGroupMembers(List<ScheduleGroup> scheduleGroupList) throws DataAccessException;
+    List<Schedule> findSchedules(List<Schedule> scheduleList) throws DataAccessException;
+    Integer createScheduleEmployees(Schedule schedule) throws DataAccessException;
 }
