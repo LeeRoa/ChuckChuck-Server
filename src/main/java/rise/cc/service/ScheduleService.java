@@ -1,5 +1,6 @@
 package rise.cc.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import rise.cc.dto.Schedule;
 import rise.cc.dto.ScheduleGroup;
 
@@ -10,4 +11,5 @@ public interface ScheduleService {
     String createScheduleGroup(ScheduleGroup scheduleGroup);
     String createSchedule(Schedule schedule);
     String inviteGroupMembers(List<ScheduleGroup> scheduleGroup);
+    String selectSchedule(List<Schedule> scheduleList) throws JsonProcessingException;
 }

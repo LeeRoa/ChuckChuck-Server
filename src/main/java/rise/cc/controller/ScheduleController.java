@@ -1,15 +1,15 @@
 package rise.cc.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import rise.cc.dto.Schedule;
 import rise.cc.dto.ScheduleGroup;
 import rise.cc.service.ScheduleService;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Slf4j
@@ -35,6 +35,11 @@ public class ScheduleController {
     @PostMapping("/invite-member")
     public String inviteMember(@RequestBody List<ScheduleGroup> scheduleGroupList) {
         return scheduleService.inviteGroupMembers(scheduleGroupList);
+    }
+
+    @GetMapping("")
+    public String selectSchedule(@RequestBody List<Schedule> scheduleList) throws JsonProcessingException {
+        return scheduleService.selectSchedule(scheduleList);
     }
 
 }

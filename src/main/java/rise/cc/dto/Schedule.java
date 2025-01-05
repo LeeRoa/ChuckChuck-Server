@@ -1,9 +1,11 @@
 package rise.cc.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Data
@@ -26,12 +28,27 @@ public class Schedule {
     private Integer scheduleId;
     private String scheduleName;
     private String scheduleContent;
-    private Date scheduleStartDt;
-    private Date scheduleEndDt;
     private String schedulePlace;
-    private Date scheduleRegisterDt;
-    private Date scheduleUpdateDt;
     private Character alldayWhether;
     private Integer scheduleGroupId;
+    private Integer empId;
     private String spare;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp scheduleDate;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp scheduleStartDt;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp scheduleEndDt;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp scheduleRegisterDt;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp scheduleUpdateDt;
+
+
+
 }
