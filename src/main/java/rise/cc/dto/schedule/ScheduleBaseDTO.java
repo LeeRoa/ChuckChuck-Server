@@ -1,4 +1,4 @@
-package rise.cc.dto;
+package rise.cc.dto.schedule;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -6,12 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-public class Schedule {
+public class ScheduleBaseDTO {
     /*
     일정 고유 ID	schedule_id	int
     일정 제목	schedule_name	int

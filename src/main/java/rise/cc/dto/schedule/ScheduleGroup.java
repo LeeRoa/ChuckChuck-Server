@@ -1,4 +1,4 @@
-package rise.cc.dto;
+package rise.cc.dto.schedule;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
