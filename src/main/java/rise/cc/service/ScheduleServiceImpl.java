@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rise.cc.common.ResultCode;
 import rise.cc.dao.ScheduleDao;
-import rise.cc.dto.Schedule;
-import rise.cc.dto.ScheduleGroup;
+import rise.cc.dto.schedule.ScheduleBaseDTO;
+import rise.cc.dto.schedule.ScheduleGroup;
 import rise.cc.util.JsonUtils;
 
 import java.util.List;
@@ -32,8 +32,7 @@ public class ScheduleServiceImpl implements ScheduleService {
 
     @Transactional
     @Override
-    public String createSchedule(Schedule schedule) {
-        validate(schedule, "scheduleName", "scheduleStartDt", "scheduleEndDt", "scheduleGroupId", "empId");
+    public String createSchedule(ScheduleBaseDTO schedule) {
         int createSchedule = scheduleDao.createSchedule(schedule);
         if(createSchedule < 0) {
             return JsonUtils.resultJsonString(ResultCode.ERROR, ResultCode.ERROR_MSG);
@@ -65,12 +64,12 @@ public class ScheduleServiceImpl implements ScheduleService {
     }
 
     @Override
-    public String selectSchedule(List<Schedule> scheduleList) throws JsonProcessingException {
-        for(Schedule schedule : scheduleList) {
+    public String selectSchedule(List<ScheduleBaseDTO> scheduleList) throws JsonProcessingException {
+        for(ScheduleBaseDTO schedule : scheduleList) {
             validate(schedule, "scheduleGroupId", "empId", "scheduleDate");
         }
 
-        List<Schedule> selectScheduleResult = scheduleDao.findSchedules(scheduleList);
+        List<ScheduleBaseDTO> selectScheduleResult = scheduleDao.findSchedules(scheduleList);
 
         if(selectScheduleResult == null || selectScheduleResult.isEmpty()) {
             return JsonUtils.resultJsonString(ResultCode.SUCCESS, "일정이 존재하지 않습니다.");
