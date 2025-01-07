@@ -6,11 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-public class ScheduleBaseDTO {
+public class ScheduleDTO {
     /*
     일정 고유 ID	schedule_id	int
     일정 제목	schedule_name	int
@@ -29,9 +30,10 @@ public class ScheduleBaseDTO {
     private String scheduleContent;
     private String schedulePlace;
     private Character alldayWhether;
-    private Integer scheduleGroupId;
     private Integer empId;
     private String spare;
+    private Integer scheduleGroupMembers;
+
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Timestamp scheduleDate;
@@ -47,6 +49,17 @@ public class ScheduleBaseDTO {
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Timestamp scheduleUpdateDt;
+
+    // scheduleGroup
+    private Integer scheduleGroupId;
+    private String scheduleGroupName;
+    private String scheduleGroupDescription;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date scheduleGroupCreateDt;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date scheduleGroupUpdateDt;
 
 
 
