@@ -9,14 +9,15 @@ import org.springframework.validation.ObjectError;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import rise.cc.common.ResultCode;
-import rise.cc.dto.schedule.CreateScheduleDTO;
-import rise.cc.dto.schedule.ScheduleBaseDTO;
-import rise.cc.dto.schedule.ScheduleGroup;
+import rise.cc.dto.schedule.validation.ScheduleCreateVDTO;
+import rise.cc.dto.schedule.ScheduleDTO;
+import rise.cc.dto.schedule.validation.ScheduleGroupCreateVDTO;
+import rise.cc.dto.schedule.validation.ScheduleGroupMemberAddVDTO;
+import rise.cc.dto.schedule.validation.ScheduleSearchVDTO;
 import rise.cc.service.ScheduleService;
 import rise.cc.util.JsonUtils;
 
 import java.util.List;
-import java.util.Objects;
 
 @Slf4j
 @RestController
@@ -27,33 +28,52 @@ public class ScheduleController {
     private final ScheduleService scheduleService;
 
     @PostMapping("/group-create")
-    public String createGroup(@RequestBody ScheduleGroup scheduleGroup) {
-
-        return scheduleService.createScheduleGroup(scheduleGroup);
+    public String scheduleGroupCreate(@Validated @RequestBody ScheduleGroupCreateVDTO schedule, BindingResult bindingResult) {
+        String validationError = validation(bindingResult);
+        if(validationError != null) {
+            return validationError;
+        }
+        return scheduleService.createScheduleGroup(schedule);
     }
 
     @PostMapping("/create")
-    public String createSchedule(@Validated @RequestBody CreateScheduleDTO schedule, BindingResult bindingResult) {
+    public String scheduleCreate(@Validated @RequestBody ScheduleCreateVDTO schedule, BindingResult bindingResult) {
+        String validationError = validation(bindingResult);
+        if(validationError != null) {
+            return validationError;
+        }
+        return scheduleService.createSchedule(schedule);
+    }
+
+    @PostMapping("/invite-member")
+    public String scheduleGroupMemberAdd(@Valid @RequestBody List<ScheduleGroupMemberAddVDTO> scheduleList, BindingResult bindingResult) {
+        String validationError = validation(bindingResult);
+        if(validationError != null) {
+            return validationError;
+        }
+        return scheduleService.scheduleGroupMemberAdd(scheduleList);
+    }
+
+    @GetMapping("")
+    public String scheduleSearch(@Valid @RequestBody List<ScheduleSearchVDTO> scheduleList, BindingResult bindingResult) throws JsonProcessingException {
+        String validationError = validation(bindingResult);
+        if(validationError != null) {
+            return validationError;
+        }
+        return scheduleService.selectSchedule(scheduleList);
+    }
+
+    public String validation(BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
 
             StringBuilder errorMessage = new StringBuilder();
             for (ObjectError error : bindingResult.getAllErrors()) {
                 errorMessage.append(error.getDefaultMessage()).append(". ");
             }
+            log.info("validation error: {}", errorMessage);
             return JsonUtils.resultJsonString(ResultCode.ERROR, errorMessage.toString());
         }
-
-        return scheduleService.createSchedule(schedule);
-    }
-
-    @PostMapping("/invite-member")
-    public String inviteMember(@RequestBody List<ScheduleGroup> scheduleGroupList) {
-        return scheduleService.inviteGroupMembers(scheduleGroupList);
-    }
-
-    @GetMapping("")
-    public String selectSchedule(@RequestBody List<ScheduleBaseDTO> scheduleList) throws JsonProcessingException {
-        return scheduleService.selectSchedule(scheduleList);
+        return null;
     }
 
 }
