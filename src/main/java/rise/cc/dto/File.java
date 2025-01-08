@@ -2,6 +2,7 @@ package rise.cc.dto;
 
 import lombok.Getter;
 
+
 @Getter
 public class File {
     private int fileNo;
@@ -30,11 +31,7 @@ public class File {
     }
 
     public static File from(NoticeAddDto dto) {
-        return new File(
-                dto.getOriginName(),
-                dto.getStoredName(),
-                dto.getCreateDt(),
-                dto.getUpdateDt(),
+
                 dto.getFileSize(),
                 dto.getFilePath(),
                 dto.getFileContent()
@@ -44,4 +41,5 @@ public class File {
     public void setFileNo(int fileNo) {
         this.fileNo = fileNo;
     }
+
 }

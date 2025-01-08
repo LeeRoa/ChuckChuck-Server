@@ -10,8 +10,8 @@ import java.util.List;
 public interface EmpDao {
     Employees loginProc(Employees emp) throws DataAccessException;
     List<Employees> getEmp(Employees emp) throws DataAccessException;
-    Integer getEmpCount(Employees emp) throws DataAccessException;
-    Integer createEmp(Employees emp) throws DataAccessException;
-    Integer updateEmp(Employees emp) throws DataAccessException;
+    int getEmpCount(Employees emp) throws DataAccessException;
+    int createEmp(Employees emp) throws DataAccessException;
+    int updateEmp(Employees emp) throws DataAccessException;
     Employees getRole(Employees emp) throws DataAccessException;
 }

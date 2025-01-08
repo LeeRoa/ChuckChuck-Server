@@ -29,7 +29,7 @@ public class AdminController {
      */
     @PatchMapping("/emp")
     public String updateEmp(@RequestBody Employees emp) {
-        emp.setRole(Role.ROLE_ADMIN);
+        emp.setRoleInfo(Role.ROLE_ADMIN);
         return empService.updateEmp(emp);
     }
 }

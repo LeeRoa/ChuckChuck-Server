@@ -1,4 +1,4 @@
-package rise.cc.service;
+package rise.cc.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
@@ -11,7 +11,8 @@ import rise.cc.common.ResultCode;
 import rise.cc.common.Role;
 import rise.cc.dao.EmpDao;
 import rise.cc.dto.Employees;
-import rise.cc.exception.EmpException;
+import rise.cc.exception.CCException;
+import rise.cc.service.EmpService;
 import rise.cc.util.JsonUtils;
 
 import java.util.List;
@@ -22,7 +23,7 @@ import java.util.List;
 public class EmpServiceImpl implements EmpService {
 
     private final EmpDao empDao;
-    String resultMsg = JsonUtils.resultJsonString(EmpResultCode.ERROR, EmpResultCode.ERROR_MSG);
+    private String resultMsg = JsonUtils.resultJsonString(EmpResultCode.ERROR, EmpResultCode.ERROR_MSG);
 
     @Transactional
     @Override
@@ -38,6 +39,7 @@ public class EmpServiceImpl implements EmpService {
             }
         } catch (NullPointerException e) {
             log.error("로그인 프로세스 요청 에러: {}", ResultCode.resultMsg(ResultCode.NO_REQUIRED_PARAM));
+            e.printStackTrace();
             resultMsg = JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, ResultCode.NO_REQUIRED_PARAM_MSG);
         } catch (DataAccessException e) {
             log.error("로그인 DB 에러 로그 확인 필요. {}", e.getMessage());
@@ -58,7 +60,7 @@ public class EmpServiceImpl implements EmpService {
             List<Employees> findEmpList = empDao.getEmp(emp);
             if (findEmpList == null) {
                 resultMsg = JsonUtils.resultJsonString(EmpResultCode.EMP_NOT_FOUND, EmpResultCode.EMP_NOT_FOUND_MSG);
-                throw new EmpException(EmpResultCode.resultMsg(EmpResultCode.EMP_NOT_FOUND));
+                throw new CCException(EmpResultCode.resultMsg(EmpResultCode.EMP_NOT_FOUND));
             }
             log.info("사원 조회 성공.");
             resultMsg = JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "empInfo", findEmpList);
@@ -71,9 +73,10 @@ public class EmpServiceImpl implements EmpService {
             e.printStackTrace();
             resultMsg = JsonUtils.resultJsonString(EmpResultCode.DB_ERROR, EmpResultCode.DB_ERROR_MSG);
         } catch (JsonProcessingException e) {
+            e.printStackTrace();
             log.error("사원 조회 에러: {}", ResultCode.resultMsg(ResultCode.FORMAT_ERROR));
             resultMsg = JsonUtils.resultJsonString(ResultCode.FORMAT_ERROR, ResultCode.FORMAT_ERROR_MSG);
-        } catch (EmpException e) {
+        } catch (CCException e) {
             log.error("사원 조회 에러: {}", e.getMessage());
         } catch (Exception e) {
             log.error("사원 조회 에러: {}", e.getMessage());
@@ -144,12 +147,9 @@ public class EmpServiceImpl implements EmpService {
     public void setRole(Employees emp) {
         try {
             Employees getRole = empDao.getRole(emp);
-
-            emp.setRole(Role.valueOf(getRole.getRole()));
-            emp.setRoleLevel(getRole.getRoleLevel());
+            emp.setRoleInfo(Role.valueOf(getRole.getRole()));
         } catch (NullPointerException e) {
-            emp.setRole(Role.ROLE_EMP);
-            emp.setRoleLevel("1");
+            emp.setRoleInfo(Role.ROLE_EMP);
         }
     }
 }

@@ -5,6 +5,7 @@ import rise.cc.dto.request.NoticeAddRequest;
 import rise.cc.dto.NoticeAddDto;
 import rise.cc.service.NoticeService;
 
+
 @RestController
 @RequestMapping("/notice")
 public class NoticeController {
@@ -14,6 +15,7 @@ public class NoticeController {
     public NoticeController(NoticeService service) {
         this.service = service;
     }
+
 
     @PostMapping
     public void postNotice(@RequestBody NoticeAddRequest request) {

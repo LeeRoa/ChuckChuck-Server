@@ -2,6 +2,7 @@ package rise.cc.dto;
 
 import lombok.Getter;
 
+
 @Getter
 public class Notice {
 
@@ -38,9 +39,7 @@ public class Notice {
     }
 
     public static Notice from(NoticeAddDto dto) {
-        return new Notice(
-                dto.getNoticeTitle(), dto.getNoticeContent(),
-                dto.getCommentYn(), dto.getCreateDt(), dto.getUpdateDt(),
+
                 dto.getNotificationYn(), dto.getEmpId(), dto.getOriginName(),
                 dto.getStoredName(), dto.getFileSize(), dto.getFilePath(), dto.getFileContent()
         );
