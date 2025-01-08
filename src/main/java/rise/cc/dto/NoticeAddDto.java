@@ -15,6 +15,7 @@ public class NoticeAddDto {
     private String noticeTitle;
     private String noticeContent;
     private String commentYn;
+
     private String notificationYn;
     private String empId;
     private String originName;
@@ -24,11 +25,7 @@ public class NoticeAddDto {
     private String fileContent;
 
     public NoticeAddDto(String noticeTitle, String noticeContent, String commentYn,
-                        String notificationYn, String empId, String originName,
-                        String storedName, String filePath, String fileContent) {
-        this.noticeTitle = noticeTitle;
-        this.noticeContent = noticeContent;
-        this.commentYn = commentYn;
+
         this.notificationYn = notificationYn;
         this.empId = empId;
         this.originName = originName;
@@ -50,9 +47,6 @@ public class NoticeAddDto {
             e.printStackTrace();
         }
 
-        return new NoticeAddDto(request.getNoticeTitle(), request.getNoticeContent(),
-                request.getCommentYn(), request.getNotificationYn(), request.getEmpId(),
-                request.getOriginName(), request.getStoredName(), request.getFilePath(),
-                fileContent);
+
     }
 }

@@ -1,5 +1,6 @@
 package rise.cc.service;
 
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import rise.cc.dao.NoticeDao;
@@ -23,9 +24,6 @@ public class NoticeService {
             int noticeNo = notice.getNoticeNo();
 
             File file = File.from(dto);
-            if (file.isEmptyFile()) {
-                return;
-            }
 
             dao.insertFile(file);
             int fileNo = file.getFileNo();
