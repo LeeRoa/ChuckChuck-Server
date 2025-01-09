@@ -10,5 +10,5 @@ public interface ScheduleService {
     String createScheduleGroup(ScheduleDTO Schedule);
     String createSchedule(ScheduleDTO schedule);
     String scheduleGroupMemberAdd(List<? extends ScheduleDTO> ScheduleList);
-    String selectSchedule(List<? extends ScheduleDTO> scheduleList) throws JsonProcessingException;
+    String selectSchedule(ScheduleDTO scheduleList) throws JsonProcessingException;
 }

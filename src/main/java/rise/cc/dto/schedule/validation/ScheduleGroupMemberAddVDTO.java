@@ -1,10 +1,13 @@
 package rise.cc.dto.schedule.validation;
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import rise.cc.dto.schedule.ScheduleDTO;
+
+import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -16,4 +19,5 @@ public class ScheduleGroupMemberAddVDTO extends ScheduleDTO {
 
     @NotNull(message = "empId는 필수 입력값 입니다")
     private Integer empId;
+
 }

@@ -2,28 +2,36 @@ package rise.cc.exception;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.validation.ObjectError;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.InitBinder;
 import rise.cc.common.ResultCode;
 import rise.cc.util.JsonUtils;
 
+import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Slf4j
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(IllegalArgumentException.class)
-    public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentException e) {
-        log.error("IllegalArgumentException 발생: {}", e.getMessage());
-        return ResponseEntity.badRequest()
-                .body(JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, e.getMessage() + "(필수값 누락)"));
+    protected final LocalValidatorFactoryBean validator;
+
+    public GlobalExceptionHandler(LocalValidatorFactoryBean validator) {
+        this.validator = validator;
+    }
+
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        binder.addValidators(new CollectionValidator(validator));
     }
 
     @ExceptionHandler(DataAccessException.class)
@@ -55,6 +63,41 @@ public class GlobalExceptionHandler {
         log.error("JsonProcessingException 발생: {}", e.getMessage());
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(JsonUtils.resultJsonString(ResultCode.ERROR, "JsonProcessingException"));
+    }
+
+    // 유효성 검사 실패 예외 처리
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<String> handleValidationException(MethodArgumentNotValidException e) {
+        List<ObjectError> allErrors = e.getBindingResult().getAllErrors();
+        String message = getMessage(allErrors.iterator());
+
+        String result = JsonUtils.resultJsonString(ResultCode.ERROR, message);
+
+        return ResponseEntity.badRequest().body(result);
+    }
+
+    // 유효성 검사 실패 메시지
+    private String getMessage(Iterator<ObjectError> errorIterator) {
+        StringBuilder resultMessageBuilder = new StringBuilder();
+        while (errorIterator.hasNext()) {
+            ObjectError error = errorIterator.next();
+            FieldError fieldError = (FieldError) error;
+
+            resultMessageBuilder.append("['")
+                    .append(fieldError.getField())
+                    .append("' is '")
+                    .append(fieldError.getRejectedValue())
+                    .append("' :: ")
+                    .append(error.getDefaultMessage())
+                    .append("]");
+
+            if (errorIterator.hasNext()) {
+                resultMessageBuilder.append(", ");
+            }
+        }
+
+        log.error(resultMessageBuilder.toString());
+        return resultMessageBuilder.toString();
     }
 
 }

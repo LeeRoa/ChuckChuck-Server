@@ -58,9 +58,9 @@ public class ScheduleServiceImpl implements ScheduleService {
     }
 
     @Override
-    public String selectSchedule(List<? extends ScheduleDTO> scheduleList) throws JsonProcessingException {
+    public String selectSchedule(ScheduleDTO schedule) throws JsonProcessingException {
 
-        List<? extends ScheduleDTO> selectScheduleResult = scheduleDao.scheduleSearch(scheduleList);
+        List<ScheduleDTO> selectScheduleResult = scheduleDao.scheduleSearch(schedule);
 
         if(selectScheduleResult == null || selectScheduleResult.isEmpty()) {
             return JsonUtils.resultJsonString(ResultCode.SUCCESS, "일정이 존재하지 않습니다.");
