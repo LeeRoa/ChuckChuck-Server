@@ -11,6 +11,8 @@ spring:
     url: jdbc:log4jdbc:mariadb://222.120.180.213:23307/approval?serverTimezone=UTC&characterEncoding=UTF-8
     username: dba
     password: LRAqscESZ!%
+    hikari:
+      connection-timeout: 15000   # 커넥션 타임아웃 (15초)
 
 # Mybatis Setting
 mybatis:
