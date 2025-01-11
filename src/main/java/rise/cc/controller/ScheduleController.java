@@ -6,10 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import rise.cc.dto.schedule.validation.ScheduleCreateVDTO;
-import rise.cc.dto.schedule.validation.ScheduleGroupCreateVDTO;
-import rise.cc.dto.schedule.validation.ScheduleGroupMemberAddVDTO;
-import rise.cc.dto.schedule.validation.ScheduleSearchVDTO;
+import rise.cc.dto.schedule.validation.*;
 import rise.cc.service.ScheduleService;
 
 import java.util.List;
@@ -22,23 +19,56 @@ public class ScheduleController {
 
     private final ScheduleService scheduleService;
 
+    /**
+     * @param schedule 일정 그룹 생성 요청 (필수 값):
+     *                 - Integer scheduleGroupName : 생성할 그룹 이름
+     *                 - Integer empId : 그룹의 생성자(대표자)
+     * @return 성공 실패여부(실패 이유설명)
+     */
     @PostMapping("/group-create")
-    public String scheduleGroupCreate(@Validated @RequestBody ScheduleGroupCreateVDTO schedule) {
+    public String scheduleGroupCreate(@Valid @RequestBody ScheduleGroupCreateVDTO schedule) {
         return scheduleService.createScheduleGroup(schedule);
     }
 
+    /**
+     @param schedule 일정 생성 요청 데이터 (필수 값):
+      *                 - String scheduleName: 일정 이름
+      *                 - Integer scheduleGroupId: 일정 그룹 ID
+      *                 - Timestamp scheduleStartDt: 일정 시작 날짜/시간
+      *                 - Timestamp scheduleEndDt: 일정 종료 날짜/시간
+      *                 - Integer empId: 담당자 ID
+      * @return 성공 또는 실패 여부 (실패 시 이유 설명 포함)
+     */
     @PostMapping("/create")
-    public String scheduleCreate(@Validated @RequestBody ScheduleCreateVDTO schedule) {
+    public String scheduleCreate(@Valid @RequestBody ScheduleCreateVDTO schedule) {
         return scheduleService.createSchedule(schedule);
     }
 
+    /**
+     * @param scheduleList 생성된 그룹에 구성원 추가 (필수 값):
+     *                 - Integer scheduleGroupId : 구성원을 포함시킬 그룹의 고유번호
+     *                 - Integer empId : 추가한 구성원의 고유번호
+     * @return 성공 실패여부(실패 이유설명)
+     */
     @PostMapping("/invite-member")
     public String scheduleGroupMemberAdd(@Valid @RequestBody List<ScheduleGroupMemberAddVDTO> scheduleList) {
         return scheduleService.scheduleGroupMemberAdd(scheduleList);
     }
 
-    @PostMapping("")
-    public String scheduleSearch(@Valid @RequestBody ScheduleSearchVDTO schedule) throws JsonProcessingException {
+    /**
+     * @param schedule 조회 하고 싶은 일정의 일시, 그룹의 정보를 받아 정보 조회 (필수 값):
+     *                 - Integer schedSuleGroupId : 조회 할 그룹의 고유번호
+     *                 - Integer empId : 조회하는 사원의 고유번호
+     *                 - Timestamp scheduleDate : 조회하고 싶은 날짜/시간
+     * @return 성공 실패여부(실패 이유설명)
+     */
+    @GetMapping("")
+    public String scheduleSearch(@Valid ScheduleSearchVDTO schedule) throws JsonProcessingException {
         return scheduleService.selectSchedule(schedule);
+    }
+
+    @DeleteMapping("/delete")
+    public String scheduleDelete(@Valid @RequestBody ScheduleDeleteVDTO schedule) {
+        return "";
     }
 }
