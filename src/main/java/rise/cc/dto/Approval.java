@@ -1,11 +1,13 @@
 package rise.cc.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import rise.cc.common.SearchCriteria;
 
+import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 
@@ -32,11 +34,14 @@ public class Approval extends SearchCriteria {
     private String docNo;
     private String docType;
     private String empId;
-    private Date retentionPeriod;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp retentionPeriod;
     private String docTitle;
     private String docContent;
-    private Date createDt;
-    private Date deadlineDt;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp createDt;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp deadlineDt;
     private String draftYn;
     private String deleteYn;
     private String totalLineCount;

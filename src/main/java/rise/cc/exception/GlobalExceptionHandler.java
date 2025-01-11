@@ -99,5 +99,4 @@ public class GlobalExceptionHandler {
         log.error(resultMessageBuilder.toString());
         return resultMessageBuilder.toString();
     }
-
 }

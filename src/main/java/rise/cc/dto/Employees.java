@@ -1,12 +1,17 @@
 package rise.cc.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import rise.cc.common.Role;
 import rise.cc.common.SearchCriteria;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 @EqualsAndHashCode(callSuper = true)
@@ -34,16 +39,20 @@ public class Employees extends SearchCriteria {
                             spare
      */
     private String empId;
+    @Email(message = "이메일 규격에 맞지 않습니다.")
     private String empEmail;
     private String empPhonenum;
     private String empPw;
     private String empName;
-    private Date empBirth;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp empBirth;
     private String empAccountStatus;
     private String empPosition;
     private String pwErrorCnt;
-    private Date empJoinDt;
-    private Date empRetireDt;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp empJoinDt;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Timestamp empRetireDt;
     private String departmentId;
     private String rankId;
     private String bizNo;

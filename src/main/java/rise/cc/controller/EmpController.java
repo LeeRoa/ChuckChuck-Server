@@ -1,5 +1,6 @@
 package rise.cc.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,7 @@ public class EmpController {
      * @return 검색된 회원의 데이터 Json 형식
      */
     @PostMapping("/login")
-    public String login(@RequestBody Employees emp) {
+    public String login(@Valid @RequestBody Employees emp) {
         return empService.loginProc(emp);
     }
 
@@ -30,7 +31,7 @@ public class EmpController {
      * @return 검색된 회원의 데이터 Json 형식
      */
     @GetMapping("")
-    public String findEmp(Employees emp) {
+    public String findEmp(@Valid Employees emp) {
         return empService.getEmp(emp);
     }
 
@@ -40,7 +41,7 @@ public class EmpController {
      * @return 처리 결과 값 Json String
      */
     @PostMapping("")
-    public String createEmp(@RequestBody Employees emp) {
+    public String createEmp(@Valid @RequestBody Employees emp) {
         return empService.createEmp(emp);
     }
 
@@ -50,8 +51,7 @@ public class EmpController {
      * @return 처리 결과 값 Json String
      */
     @PostMapping("/validate")
-    public String validateEmp(@RequestBody Employees emp) {
+    public String validateEmp(@Valid @RequestBody Employees emp) {
         return empService.validateEmp(emp);
     }
-
 }
