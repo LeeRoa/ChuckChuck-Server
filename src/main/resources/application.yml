@@ -59,7 +59,6 @@ logging:
   pattern:
     file: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
 #    name: ${catalina.base}/logs/ChuckChuck-Server.log
-
   logback:
     rollingpolicy:
       file-name-pattern: "logs/ChuckChuck-Server.%d{yyyy-MM-dd}.%i.log"

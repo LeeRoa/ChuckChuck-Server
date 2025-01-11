@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="rise.cc.dao.ScheduleDao">
+    <insert id="scheduleGroupCreate" parameterType="rise.cc.dto.schedule.ScheduleDTO">
+        INSERT INTO SCHEDULE_GROUP (
+            SCHEDULE_GROUP_NAME,
+            SCHEDULE_GROUP_DESCRIPTION,
+            EMP_ID
+        )
+        VALUES (
+            #{scheduleGroupName},
+            #{scheduleGroupDescription},
+            #{empId}
+        )
+    </insert>
+
+    <insert id="scheduleCreate" parameterType="rise.cc.dto.schedule.ScheduleDTO">
+        INSERT INTO CC_SCHEDULE (
+        SCHEDULE_NAME,
+        SCHEDULE_CONTENT,
+        SCHEDULE_START_DT,
+        SCHEDULE_END_DT,
+        SCHEDULE_PLACE,
+        ALLDAY_WHETHER,
+        SCHEDULE_GROUP_ID
+        )
+        VALUES (
+        #{scheduleName},
+        #{scheduleContent},
+        #{scheduleStartDt},
+        #{scheduleEndDt},
+        #{schedulePlace},
+        <if test="alldayWhether != null">
+            #{alldayWhether},
+        </if>
+        <if test="alldayWhether == null">
+            'N',
+        </if>
+        #{scheduleGroupId}
+        );
+
+        <selectKey keyProperty="scheduleId" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+    </insert>
+
+    <insert id="createScheduleEmployees" parameterType="rise.cc.dto.schedule.ScheduleDTO">
+        INSERT INTO SCHEDULE_EMPLOYEES (SCHEDULE_ID, EMP_ID)
+        VALUES (#{scheduleId}, #{empId});
+    </insert>
+
+
+    <insert id="scheduleGroupMemberAdd" parameterType="java.util.List">
+        INSERT INTO SCHEDULE_GROUP_MEMBER (
+            SCHEDULE_GROUP_ID,
+            EMP_ID
+        )
+        VALUES
+        <foreach collection="scheduleGroupList" item="item" separator=",">
+            (
+                #{item.scheduleGroupId},
+                #{item.empId}
+            )
+        </foreach>
+    </insert>
+
+    <select id="scheduleSearch" parameterType="rise.cc.dto.schedule.ScheduleDTO" resultType="rise.cc.dto.schedule.ScheduleDTO">
+        SELECT
+        sch.SCHEDULE_ID,
+        sch.SCHEDULE_NAME,
+        sch.SCHEDULE_CONTENT,
+        sch.SCHEDULE_START_DT,
+        sch.SCHEDULE_END_DT,
+        sch.SCHEDULE_PLACE,
+        sch.ALLDAY_WHETHER,
+        sch.SCHEDULE_REGISTER_DT,
+        sch.SCHEDULE_UPDATE_DT,
+        emp.EMP_ID
+        FROM
+        CC_SCHEDULE sch
+        JOIN
+        SCHEDULE_EMPLOYEES emp ON sch.SCHEDULE_ID = emp.SCHEDULE_ID
+        WHERE
+            sch.SCHEDULE_GROUP_ID = #{scheduleGroupId}
+            AND emp.EMP_ID = #{empId}
+            AND #{scheduleDate} BETWEEN sch.SCHEDULE_START_DT AND sch.SCHEDULE_END_DT
+    </select>
+
+
+
+
+
+
+
+</mapper>

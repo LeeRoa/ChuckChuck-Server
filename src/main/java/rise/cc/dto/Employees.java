@@ -2,15 +2,18 @@ package rise.cc.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import rise.cc.common.Role;
+import rise.cc.common.SearchCriteria;
 
 import java.util.Date;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-public class Employees {
+public class Employees extends SearchCriteria {
     /*
         사원번호	            emp_id
         이메일(사용자 아이디)	emp_email
