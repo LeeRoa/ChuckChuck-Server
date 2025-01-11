@@ -136,6 +136,25 @@ public class EmpServiceImpl implements EmpService {
         return resultMsg;
     }
 
+    @Override
+    public String validateEmp(Employees emp) {
+        try {
+            if(emp.getEmpEmail() == null) {
+                throw new EmpException("");
+            }
+
+        } catch (NullPointerException e) {
+            log.error("회원가입 인증번호 생성 ID: {}, 에러: {}", emp.getEmpEmail(), ResultCode.resultMsg(ResultCode.NO_REQUIRED_PARAM));
+            e.printStackTrace();
+            resultMsg = JsonUtils.resultJsonString(ResultCode.NO_REQUIRED_PARAM, ResultCode.NO_REQUIRED_PARAM_MSG);
+        } catch (Exception e) {
+            log.error("회원가입 인증번호 생성 ID: {}, 에러 : {}", emp.getEmpEmail(), e.getMessage());
+            e.printStackTrace();
+        }
+
+        return resultMsg;
+    }
+
     /**
      * 파라미터로 받은 사용자의 권한을 세팅한다.
      * 권한의 레벨이 1 이하라면 기본 권한을 세팅한다.

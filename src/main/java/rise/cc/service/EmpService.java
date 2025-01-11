@@ -13,4 +13,6 @@ public interface EmpService {
     String createEmp(Employees emp);
 
     String updateEmp(Employees emp);
+
+    String validateEmp(Employees emp);
 }

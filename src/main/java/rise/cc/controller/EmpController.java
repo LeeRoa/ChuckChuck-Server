@@ -36,11 +36,22 @@ public class EmpController {
 
     /**
      * 계정을 생성하는 컨트롤러
-     * @param emp empId, empPhonenum, empBirth, empPw,
+     * @param emp empId, empPhonenum, empBirth, empPw
      * @return 처리 결과 값 Json String
      */
     @PostMapping("")
     public String createEmp(@RequestBody Employees emp) {
         return empService.createEmp(emp);
     }
+
+    /**
+     * 회원가입을 위해 인증번호를 전송하는 컨트롤러
+     * @param emp empEmail
+     * @return 처리 결과 값 Json String
+     */
+    @PostMapping("/validate")
+    public String validateEmp(@RequestBody Employees emp) {
+        return empService.validateEmp(emp);
+    }
+
 }
