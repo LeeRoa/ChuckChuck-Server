@@ -73,12 +73,12 @@ public class ScheduleController {
     /**
      * 일정 삭제 기능
      * @param schedule 필수 값:
-     *                 - Integer scheduleGroupId : 삭제할 그룹의 고유 번호
+     *                 - Integer scheduleNo : 삭제할 일정의 고유 번호
      *                 - empId : 삭제할 그룹의 그룹장 사원의 고유 번호
      * @return 성공 실패여부(실패 이유설명)
      */
     @DeleteMapping("/delete")
     public String scheduleDelete(@Valid @RequestBody ScheduleDeleteVDTO schedule) {
-        return "";
+        return scheduleService.deleteSchedule(schedule);
     }
 }

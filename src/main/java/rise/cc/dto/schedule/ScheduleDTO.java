@@ -33,6 +33,7 @@ public class ScheduleDTO {
     private Integer empId;
     private String spare;
     private Integer scheduleGroupMembers;
+    private Character isCreator;
 
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")

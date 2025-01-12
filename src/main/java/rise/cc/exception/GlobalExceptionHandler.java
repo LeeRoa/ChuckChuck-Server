@@ -35,6 +35,14 @@ public class GlobalExceptionHandler {
         binder.addValidators(new CollectionValidator(validator));
     }
 
+    @ExceptionHandler(NullPointerException.class)
+    public ResponseEntity<String> handleNullPointerException(NullPointerException e) {
+        String errorMessage = "NullpointerException 발생";
+        logErrorWithLocation(e, errorMessage);
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(JsonUtils.resultJsonString(ResultCode.DB_ERROR, errorMessage));
+    }
+
     @ExceptionHandler(DataAccessException.class)
     public ResponseEntity<String> handleDataAccessException(DataAccessException e) {
         String errorMessage = "DB 에러 발생";
@@ -51,6 +59,8 @@ public class GlobalExceptionHandler {
             errorMessage = "DB 에러: DB 타임 아웃 발생";
         } else if(e instanceof TypeMismatchDataAccessException) {
             errorMessage = "DB 에러: SQL 결과 반환 타입 오류";
+        } else if(e instanceof EmptyResultDataAccessException) {
+            errorMessage = "DB 에러: 쿼리 결과가 비어 있습니다";
         }
         logErrorWithLocation(e, errorMessage);
 
@@ -61,7 +71,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handleException(Exception e) {
         String errorMessage = "예상치 못한 오류가 발생했습니다(Exception)";
-        logErrorWithLocation(e, errorMessage);
+        log.error("Exception : {}", e.getClass().getName());
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(JsonUtils.resultJsonString(ResultCode.ERROR, errorMessage));
     }

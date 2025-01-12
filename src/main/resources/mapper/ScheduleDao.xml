@@ -46,8 +46,8 @@
     </insert>
 
     <insert id="createScheduleEmployees" parameterType="rise.cc.dto.schedule.ScheduleDTO">
-        INSERT INTO SCHEDULE_EMPLOYEES (SCHEDULE_ID, EMP_ID)
-        VALUES (#{scheduleId}, #{empId});
+        INSERT INTO SCHEDULE_EMPLOYEES (SCHEDULE_ID, EMP_ID, IS_CREATOR)
+        VALUES (#{scheduleId}, #{empId}, 'Y');
     </insert>
 
 
@@ -87,10 +87,22 @@
             AND #{scheduleDate} BETWEEN sch.SCHEDULE_START_DT AND sch.SCHEDULE_END_DT
     </select>
 
+    <delete id="deleteSchedule" parameterType="rise.cc.dto.schedule.ScheduleDTO">
+        DELETE FROM CC_SCHEDULE
+        WHERE SCHEDULE_ID = #{scheduleId}
+    </delete>
+    
+    <delete id="deleteScheduleMember" parameterType="rise.cc.dto.schedule.ScheduleDTO">
+        DELETE FROM SCHEDULE_EMPLOYEES
+        WHERE SCHEDULE_ID = #{scheduleId}
+    </delete>
 
-
-
-
-
-
+    <select id="selectScheduleCreator" parameterType="rise.cc.dto.schedule.ScheduleDTO" resultType="Character">
+        SELECT
+            IS_CREATOR
+        FROM
+            SCHEDULE_EMPLOYEES
+        WHERE
+            SCHEDULE_ID = #{scheduleId} AND EMP_ID = #{empId}
+    </select>
 </mapper>

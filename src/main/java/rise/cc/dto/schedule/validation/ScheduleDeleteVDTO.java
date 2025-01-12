@@ -12,9 +12,9 @@ import rise.cc.dto.schedule.ScheduleDTO;
 @NoArgsConstructor
 public class ScheduleDeleteVDTO extends ScheduleDTO {
 
-    @NotNull(message = "scheduleGroupId은 필수 입력값 입니다")
-    private Integer ScheduleGroupId;
-
     @NotNull(message = "scheduleId 필수 입력값 입니다")
-    private Integer ScheduleId;
+    private Integer scheduleId;
+    
+    @NotNull(message = "empId는 필수 입력값 입니다")
+    private Integer empId;
 }

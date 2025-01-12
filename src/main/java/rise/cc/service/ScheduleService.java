@@ -7,8 +7,16 @@ import java.util.List;
 
 
 public interface ScheduleService {
+    // 일정 그룹 관련
     String createScheduleGroup(ScheduleDTO Schedule);
-    String createSchedule(ScheduleDTO schedule);
     String scheduleGroupMemberAdd(List<? extends ScheduleDTO> ScheduleList);
+
+    // 일정 관련
+    String createSchedule(ScheduleDTO schedule);
+    
+    // 일정 조회
     String selectSchedule(ScheduleDTO scheduleList) throws JsonProcessingException;
+    
+    // 일정 삭제
+    String deleteSchedule(ScheduleDTO scheduleList);
 }
