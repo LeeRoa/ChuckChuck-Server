@@ -3,7 +3,29 @@
 
 <mapper namespace="rise.cc.dao.ApprovalDao">
     <insert id="createApproval" parameterType="rise.cc.dto.Approval" useGeneratedKeys="true" keyProperty="docNo">
-
+        INSERT INTO cc_appro (
+            doc_type,
+            emp_id,
+            retention_period,
+            doc_title,
+            doc_content,
+            create_dt,
+            deadline_dt,
+            draft_YN,
+            total_line_count,
+            status_line_count
+        ) VALUES (
+                     #{docType},
+                     #{empId},
+                     #{retentionPeriod},
+                     #{docTitle},
+                     #{docContent},
+                     #{createDt},
+                     #{deadlineDt},
+                     #{draftYN},
+                     #{totalLineCount},
+                     #{statusLineCount}
+                 )
     </insert>
     <update id="updateApproval" parameterType="rise.cc.dto.Approval">
 
