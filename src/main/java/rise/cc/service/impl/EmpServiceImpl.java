@@ -1,6 +1,9 @@
 package rise.cc.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import jakarta.mail.Address;
+import jakarta.mail.MessagingException;
+import jakarta.mail.SendFailedException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataAccessException;
@@ -13,6 +16,7 @@ import rise.cc.dao.EmpDao;
 import rise.cc.dto.Employees;
 import rise.cc.common.Mail;
 import rise.cc.exception.CCException;
+import rise.cc.service.EmailService;
 import rise.cc.service.EmpService;
 import rise.cc.util.JsonUtils;
 import rise.cc.util.MailUtils;
@@ -26,6 +30,7 @@ import java.util.List;
 public class EmpServiceImpl implements EmpService {
 
     private final EmpDao empDao;
+    private final EmailService emailService;
     private String resultMsg = JsonUtils.resultJsonString(EmpResultCode.ERROR, EmpResultCode.ERROR_MSG);
 
     @Transactional
@@ -145,16 +150,16 @@ public class EmpServiceImpl implements EmpService {
     @Override
     public String validateEmp(Employees emp) {
         try {
-            if(emp.getEmpEmail() == null) {
+            if (emp.getEmpEmail() == null) {
                 throw new NullPointerException();
             }
-            MailUtils mailUtils = new MailUtils();
             Mail mail = new Mail();
+            mail.setTo(emp.getEmpEmail());
             String validNo = RandomNumberUtils.getValidNo(6);
             mail.setSendContent("회원가입 인증번호 발송 : " + validNo);
             mail.setMailType(Mail.Type.USER_VALIDATE);
-            mailUtils.sendEmail(mail);
-            
+            emailService.sendMail(mail);
+
             log.info("회원가입 인증번호 발송 성공. 회원 이메일 : {}", emp.getEmpEmail());
             resultMsg = JsonUtils.addJsonValue(JsonUtils.resultJsonString(EmpResultCode.SUCCESS, EmpResultCode.SUCCESS_MSG), "validNo", validNo);
         } catch (NullPointerException e) {

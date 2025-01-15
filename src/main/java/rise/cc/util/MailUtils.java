@@ -25,12 +25,13 @@ public class MailUtils {
         Properties properties = new Properties();
         properties.put("mail.smtp.host", host);
         properties.put("mail.smtp.port", port);
-        properties.put("mail.smtp.starttls.enable", "true");
+//        properties.put("mail.smtp.starttls.enable", "true");
 
         Session session = Session.getInstance(properties);
 
         Message message = new MimeMessage(session);
         message.setFrom(new InternetAddress(mail.getFrom()));
+        System.out.println("mail.getTo() : " + mail.getTo());
         message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(mail.getTo()));
         message.setSubject(mail.getSendTitle());
         message.setText(mail.getSendContent());

@@ -18,7 +18,7 @@ spring:
     host: risecc.kro.kr
     properties:
       mail:
-        debug: false
+        debug: true
         mime:
           charset: UTF-8
         transport:
