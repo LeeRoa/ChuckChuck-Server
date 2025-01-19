@@ -81,4 +81,16 @@ public class ScheduleController {
     public String scheduleDelete(@Valid @RequestBody ScheduleDeleteVDTO schedule) {
         return scheduleService.deleteSchedule(schedule);
     }
+
+    /**
+     * 
+     * @param schedule 필수 값:
+     *                 - Integer scheduleGroupId : 삭제할 그룹의 고유 번호
+     *                 - Integer empId : 삭제할 그룹의 그룹 생성자
+     * @return 성공 실패여부(실패 이유설명)
+     */
+    @DeleteMapping("/delete-group")
+    public String groupDelete(@Valid @RequestBody GroupDeleteVDTO schedule) {
+        return scheduleService.deleteGroup(schedule);
+    }
 }

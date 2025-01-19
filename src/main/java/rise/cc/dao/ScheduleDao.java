@@ -23,4 +23,8 @@ public interface ScheduleDao {
     Character selectScheduleCreator(ScheduleDTO schedule) throws DataAccessException;
     Integer deleteSchedule(ScheduleDTO schedule) throws DataAccessException;
     Integer deleteScheduleMember(ScheduleDTO schedule) throws DataAccessException;
+
+    // 그룹 삭제 관련
+    Integer deleteGroupMembers(ScheduleDTO schedule) throws DataAccessException;
+    Integer deleteGroup(ScheduleDTO schedule) throws DataAccessException;
 }

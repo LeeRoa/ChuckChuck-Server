@@ -20,6 +20,7 @@ import java.util.List;
 public class ScheduleServiceImpl implements ScheduleService {
 
     private final ScheduleDao scheduleDao;
+    private boolean yn;
 
     @Override
     public String createScheduleGroup(ScheduleDTO schedule) {
@@ -73,19 +74,41 @@ public class ScheduleServiceImpl implements ScheduleService {
     @Override
     public String deleteSchedule(ScheduleDTO schedule) {
         Character scheduleCreatorYN = scheduleDao.selectScheduleCreator(schedule);
-
         if(scheduleCreatorYN == 'Y'){
             int deleteScheduleMember = scheduleDao.deleteScheduleMember(schedule);
             int deleteSchedule = scheduleDao.deleteSchedule(schedule);
 
             if(deleteScheduleMember > 0 && deleteSchedule > 0) {
-                return JsonUtils.resultJsonString(ResultCode.SUCCESS, "[삭제 처리 완료]");
+                yn = true;
+//                return JsonUtils.resultJsonString(ResultCode.SUCCESS, "[삭제 처리 완료]");
             }
         }else {
             log.error("현재 empId가 해당 일정의 생성자가 아니므로 일정을 삭제 할 수 없습니다.");
-            return JsonUtils.resultJsonString(ResultCode.ERROR, "[해당 일정의 생성자가 아니므로 일정을 삭제 할 수 없습니다.]");
+//            return JsonUtils.resultJsonString(ResultCode.ERROR, "[해당 일정의 생성자가 아니므로 일정을 삭제 할 수 없습니다.]");
         }
-        return JsonUtils.resultJsonString(ResultCode.ERROR, "[일정 삭제 도중 오류가 발생했습니다.]");
+
+        if(yn) {
+            return JsonUtils.resultJsonString(ResultCode.SUCCESS, "[삭제 처리 완료]");
+        } else {
+            return JsonUtils.resultJsonString(ResultCode.ERROR, "[일정 삭제 도중 오류가 발생했습니다.]");
+        }
+    }
+
+    @Transactional
+    @Override
+    public String deleteGroup(ScheduleDTO schedule) {
+        yn = false;
+        deleteSchedule(schedule);
+        if(yn) {
+            int deleteMember = scheduleDao.deleteScheduleMember(schedule);
+            if(deleteMember > 0) {
+                int deleteSchedule = scheduleDao.deleteSchedule(schedule);
+                if(deleteSchedule > 0) {
+                    return JsonUtils.resultJsonString(ResultCode.SUCCESS, "[삭제 처리 완료]");
+                }
+            }
+        }
+        return JsonUtils.resultJsonString(ResultCode.ERROR, "[일정 그룹 삭제 도중 오류가 발생했습니다.]");
     }
 
     private String processSingleOperation(int result, String successMessage, String errorMessage) {

@@ -19,4 +19,6 @@ public interface ScheduleService {
     
     // 일정 삭제
     String deleteSchedule(ScheduleDTO scheduleList);
+
+    String deleteGroup(ScheduleDTO scheduleList);
 }

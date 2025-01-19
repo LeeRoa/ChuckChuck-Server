@@ -97,6 +97,15 @@
         WHERE SCHEDULE_ID = #{scheduleId}
     </delete>
 
+    <delete id="deleteGroupMembers" parameterType="rise.cc.dto.schedule.ScheduleDTO">
+        DELETE FROM SCHEDULE_GROUP_MEMBER
+        WHERE SCHEDULE_GROUP_ID = #{scheduleGroupId}
+    </delete>
+
+    <delete id="deleteGroup" parameterType="rise.cc.dto.schedule.ScheduleDTO">
+        DELETE FROM SCHEDULE_GROUP
+        WHERE SCHEDULE_GROUP_ID = #{scheduleGroupId} AND EMP_ID = #{empId}
+    </delete>
     <select id="selectScheduleCreator" parameterType="rise.cc.dto.schedule.ScheduleDTO" resultType="Character">
         SELECT
             IS_CREATOR
